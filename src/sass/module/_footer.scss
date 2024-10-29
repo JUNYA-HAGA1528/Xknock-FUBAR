@@ -5,6 +5,7 @@
 .footer{
     background-color: #EFF9F7;
     padding: rem(28) 0 rem(20);
+    margin-top: rem(500);
 }
 
 .footer__inner{
@@ -83,7 +84,7 @@
 }
 
 .footer__text span::after {
-	background-image: url(../images/common/footer-icon-arrow.png);
+	background-image: url(../images/common/footer-icon-arrow.webp);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -109,7 +110,7 @@
 }
 
 .footer__text--green span::after {
-	background-image: url(../images/common/footer-icon-mail.png);
+	background-image: url(../images/common/icon-mail.webp);
     top: 49%;
 }
 

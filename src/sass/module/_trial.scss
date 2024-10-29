@@ -1,0 +1,64 @@
+@use "global" as *;
+
+.trial{
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 rem(23);
+    @include mq(md) {
+        gap: 0 rem(30); 
+    }
+}
+
+.trial__frame{
+    font-family: $third-font;
+    text-align: center;
+    background-color: $darkgreen;
+    color: $white;
+    width: rem(144);
+    font-size: rem(16);
+    font-weight: $highBold;
+    letter-spacing: 0.01em;
+    border-radius: rem(60);
+    line-height: 1;
+    padding: rem(5.5) 0;
+    @include mq(md) {
+        width: rem(202);
+        font-size: rem(18);
+        padding: rem(3.5) 0;
+    }
+}
+
+.trial__frame span {
+    color: $yellow;
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
+
+.trial__trail{
+    color: $white;
+    font-size: rem(14);
+    font-weight: $bold;
+    line-height: 1.37;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(24);
+        font-weight: $highBold;
+    }
+}
+
+.trial__trail span {
+    color: $yellow;
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(24);
+        font-weight: $highBold;
+    }
+}

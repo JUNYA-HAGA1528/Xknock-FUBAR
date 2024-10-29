@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.pc-nav {
+	color: #000;
+
+}
+
+.pc-nav__list {
+	display: flex;
+}
+
+.pc-nav__item {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pc-nav__item a {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	padding:0 min(1.38vw, 20px);
+}
+
+.pc-nav__item--contact {
+	display: inline-block;
+    background-color: $darkgreen;
+    color: $white;
+	margin-left: rem(20);
+	padding: rem(15) 0;
+    width: rem(213);
+    font-size: rem(15.93);
+    border-radius: rem(27);
+}
+
+
+.pc-nav__wrapper {
+    display: flex;
+	align-items: center;
+	gap: 0 rem(10);
+}
+
+.pc-nav__wrapper img {
+	width: rem(10);
+	height: rem(5);
+}
+
+.pc-nav__wrapper--contact img {
+	width: rem(18);
+	height: rem(14);
+}
+
+.pc-nav__item:hover .pc-nav__wrapper img {
+    transform: translateY(5px); /* 下に5px移動 */
+    transition: transform 0.3s ease; /* 移動の滑らかさ */
+}
+
+.pc-nav__wrapper img {
+    transition: transform 0.3s ease; /* 通常時にもスムーズな変化を設定 */
+}
+
+
+.pc-nav__ja {
+	display: block;
+	font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+}
+
+.pc-nav__ja--contact{
+	margin-top:rem(-4);
+}

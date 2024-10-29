@@ -1,5 +1,41 @@
 @use "global" as *;
 
-.top{
-    background-color: $green;
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header__inner{
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 rem(15);
+    background-color: $yellow;
+    @include mq(md){
+        padding-left: rem(104);
+        padding-right: rem(37);
+        height: rem(81);
+    }
+}
+
+.header__logo {
+    width:rem(149) ;
+    height: rem(36);
+    position: relative;/* z-indexをきかせるため */
+    z-index: 9999;
+    @include mq(md){
+        width: rem(256);
+        height: rem(63);
+    }
+}
+
+.header__trial{
+    height: rem(49);
+    @include mq(md) {
+        height: rem(70);
+    }
 }

@@ -17,6 +17,7 @@ $padding-sp: 20px;
 
 $base-font: "Noto Sans JP", serif;
 $second-font: "Outfit", sans-serif;
+$third-font: "Inter", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 
@@ -26,7 +27,7 @@ $normal: 400;
 $medium: 500;
 $semiBold: 600;
 $bold: 700;
-
+$highBold: 900;
 
 ////////////////////
 // 色の指定
@@ -37,8 +38,10 @@ $black: #444;
 $white: #fff;
 $green: #00CCA1;
 $darkgreen: #11998E;
+$yellow: #FAFF00;
 
 body {
   font-family: $base-font;
   color: $black;
+  
 }
