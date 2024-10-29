@@ -1,8 +1,11 @@
 @use "global" as *;
-  
+
 .header__hamburger{
     z-index:9999;
     padding: 0;
+    background-color: $darkgreen;
+    padding: rem(12) rem(10);
+    border-radius: rem(4);
     @include mq(md){
         display: none;
     }
@@ -11,8 +14,8 @@
 .header__hamburger span {
     position: relative;
     display: block;
-    height: rem(0.08);
-    width: rem(32);
+    height: rem(1);
+    width: rem(21);
     background: $white;
     transition: ease .3s;
 }
@@ -22,7 +25,7 @@
 }
 
 .header__hamburger span:nth-child(2) {
-    margin: 12px 0;
+    margin: rem(7) 0;
 }
 
 .header__hamburger span:nth-child(3) {
@@ -31,7 +34,7 @@
 
 /*is-OPEN時の動き*/
 .header__hamburger.is-open span:nth-child(1) {
-    top: 12px;
+    top: 8px;
     transform: rotate(35deg);
 }
 
@@ -41,7 +44,7 @@
 }
 
 .header__hamburger.is-open span:nth-child(3) {
-    top: -12px;
+    top: -8px;
     transform: rotate(-35deg);
 }
 
@@ -49,4 +52,9 @@ body.fixed {
     width: 100%;
     height: 100%;
     position: fixed;
+}
+
+
+.no-scroll {
+    overflow: hidden;
 }

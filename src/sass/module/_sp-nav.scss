@@ -1,0 +1,88 @@
+@use "global" as *;
+
+.sp-nav{
+    // display: none;
+    position: fixed;
+    top: rem(49);
+    left: 0;
+    right: 0;
+    background-color: $white;
+    width: 100%;
+    height: 60vh;
+    z-index: 8888;
+    transform: translateX(-100%);
+    transition: ease .3s;
+    text-align: center;
+    @include mq(md){
+        display: none;
+    }
+}
+
+.sp-nav.is-open{
+    transform: translateX(0);
+}
+
+.sp-nav__list{
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    padding: rem(20) 0 rem(40);
+}
+
+.sp-nav__list {
+    box-sizing: border-box;
+}
+
+.sp-nav__item{
+    padding: rem(15) 0 rem(15) rem(15);
+}
+
+.sp-nav__item--contact {
+    display: inline-block;
+    background-color: $darkgreen;
+    color: $white;
+    margin-top: rem(15);
+    padding: rem(15) 0;
+    width: rem(170);
+    font-size: rem(15.93);
+    border-radius: rem(27);
+}
+
+.sp-nav__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0 rem(10);
+}
+
+.sp-nav__wrapper img {
+	width: rem(10);
+	height: rem(5);
+}
+
+.sp-nav__wrapper--contact img {
+	width: rem(18);
+	height: rem(14);
+}
+
+.sp-nav__item:hover .sp-nav__wrapper img {
+    transform: translateY(5px); /* 下に5px移動 */
+    transition: transform 0.3s ease; /* 移動の滑らかさ */
+}
+
+.sp-nav__wrapper img {
+    transition: transform 0.3s ease; /* 通常時にもスムーズな変化を設定 */
+}
+
+
+.sp-nav__ja {
+	display: block;
+	font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+}
+
+.sp-nav__ja--contact{
+	margin-top:rem(-4);
+}

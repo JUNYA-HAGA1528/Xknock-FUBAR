@@ -13,8 +13,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 rem(15);
-    background-color: $yellow;
+    padding: 0 rem(20);
+    height: rem(60);
+    background-color: $white;
     @include mq(md){
         padding-left: rem(104);
         padding-right: rem(37);
@@ -38,4 +39,8 @@
     @include mq(md) {
         height: rem(70);
     }
+}
+
+.header__sp-nav{
+    padding-top: rem(70);
 }
