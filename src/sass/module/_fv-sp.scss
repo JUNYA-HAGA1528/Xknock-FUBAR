@@ -1,0 +1,155 @@
+@use "global" as *;
+
+.fv-sp{
+    margin-top: rem(116);
+    background-image: url('../images/common/fv-bg-sp.webp');
+    background-position: center bottom; /* 中央から20px上に移動 */    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: rem(118);
+    position: relative;
+    z-index: 100;
+}
+
+.fv-sp__bg{
+    position: relative;
+    max-width: $max-width;
+    margin: 0 auto;
+}
+
+.fv-sp__bg::before{
+    background-image: url('../images/common/fv-main-sp.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(268);
+    left: calc(50% - min(57%, rem(800)));
+    width: rem(407);
+    height: rem(310);
+    z-index: 1;
+}
+
+.fv-sp__bg-second{
+    position: relative;
+}
+
+.fv-sp__bg-second::before{
+    background-image: url('../images/common/fv-bgText.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(175);
+    right: calc(50% - min(98%, rem(800)));
+    width: rem(650);
+    height: rem(450);
+    z-index: -1;
+}
+
+.fv-sp__inner{
+    max-width: $max-width;
+    margin: 0 auto;
+    padding: 0 0 0 rem(25);
+}
+
+.fv-sp__subtitle{
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(24/16);
+}
+
+.fv-sp__main{
+    margin-top: rem(16);
+    color: $darkgreen;
+    display: flex;
+    align-items: center;
+    gap: 0 rem(5.82);
+}
+
+.fv-sp__title{
+    font-size: rem(41.5);
+    font-weight: $highBold;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.fv-sp__title span:nth-child(2) {
+    font-size: 29.64px;
+}
+
+.fv-sp__title span:nth-child(3) {
+    font-size: 37.05px;
+    margin-left: rem(5);
+}
+
+.fv-sp__title-text{
+    font-size: rem(20.75);
+    font-weight: $highBold;
+    line-height: calc(23.7/20.75);
+    white-space: nowrap;
+}
+
+
+
+
+
+.fv-sp__check{
+    margin-top: rem(20);
+}
+
+.fv-sp__checkBox{
+    display: flex;
+    align-items: center;
+    gap: 0 rem(11.6);
+}
+
+.fv-sp__checkBox + .fv-sp__checkBox{
+    margin-top: rem(4.25);
+}
+
+.fv-sp__check-icon{
+    width: rem(19.34);
+    height: rem(19.34);
+}
+
+.fv-sp__check-text{
+    font-size: rem(15);
+    font-weight: $bold;
+    line-height: calc(26.8/15);
+    letter-spacing: 0.01em;
+}
+
+span.marker {
+    background: linear-gradient(transparent 50%, $yellow 80%);
+}
+
+.fv-sp__remarks{
+    display: inline-block;
+    background-color: $white;
+    color: $darkgreen;
+    margin-top: rem(11.75);
+    padding: rem(0) rem(7);
+    font-size: rem(12);
+    font-weight: $bold;
+    line-height: calc(36/12);
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+
+.fv-sp__award{
+    margin-top: rem(259);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 rem(11.97);
+}
+
+.fv-sp__award-img{
+    width: rem(104);
+    height: rem(106);
+    position: relative;
+    z-index: 10;
+}

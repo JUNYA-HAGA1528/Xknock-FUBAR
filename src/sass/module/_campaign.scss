@@ -1,0 +1,151 @@
+@use "global" as *;
+
+.campaign{
+    text-align: center;
+}
+
+.campaign__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1030);
+        padding: 0 rem(25);
+    }
+}
+
+.campaign__content{
+    background-color: $green;
+    padding: rem(21) rem(10) rem(40);
+    border-radius: rem(10);
+    box-shadow: 0px 6px 19px rgba(216, 216, 216, 1);
+    @include mq(md) {
+        padding: rem(20) rem(0) rem(46);
+    }
+}
+
+.campaign__heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 rem(7);
+    @include mq(md) {
+        gap: 0 rem(27); 
+    }
+}
+
+.campaign__title{
+    color: $darkgreen;
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(18);
+        line-height: calc(32/18);
+    }
+}
+
+.campaign__title{
+    font-size: rem(18);
+}
+
+.campaign__border{
+    width: 100%;
+    border-top: solid 1px $green;
+    @include mq(md) {
+        width: rem(280);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.button a {
+    display: inline-block;
+}
+
+.button--block a {
+    display: block;
+}
+
+.button__box {
+    position: relative;
+    z-index: 1;
+}
+
+.button__comment {
+    position: absolute;
+    top: -40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(195);
+    height: rem(34);
+    z-index: 100;
+    @include mq(md) {
+        width: rem(307);
+        height: rem(54);
+    }
+}
+
+.button__item  {
+    font-family: $second-family;
+    background: $green;
+    position: relative;
+    color: $white;
+    font-size: rem(20);
+    font-weight: $semiBold;
+    padding-right: rem(20);
+    letter-spacing: 0.08em;
+    width: rem(281);
+    height: rem(51.5);
+    border-radius: rem(50);
+    z-index: 1;
+    transition: 0.4s;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    @include mq(md) {
+        width: rem(506);
+        height: rem(87);
+        padding-right: rem(64);   
+        font-size: rem(32);
+    }
+}
+
+.button__item span::after {
+	background-image: url(../images/common/button-icon.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 50%;
+    right: rem(28);
+    width: rem(21);
+	height: rem(21);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md) {
+        right: rem(74);
+        width: rem(42);
+        height: rem(42);
+    }
+}
+
+.button__item:hover{
+    opacity: 0.5;
+}
+
+.button__item:hover span::after {
+    right: rem(24); /* ここで右に移動する値を指定します */
+    transition: 0.4s right; /* rightの移動に対するアニメーション */
+    @include mq(md) {
+        right: rem(66); /* ここで右に移動する値を指定します */
+    }
+}
