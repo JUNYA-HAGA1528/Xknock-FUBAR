@@ -2,6 +2,8 @@
 
 .campaign{
     text-align: center;
+    position: relative;
+    z-index: 100;
 }
 
 .campaign__inner{
@@ -15,7 +17,7 @@
 }
 
 .campaign__content{
-    background-color: $green;
+    background-color: $white;
     padding: rem(21) rem(10) rem(40);
     border-radius: rem(10);
     box-shadow: 0px 6px 19px rgba(216, 216, 216, 1);
@@ -50,7 +52,7 @@
 }
 
 .campaign__border{
-    width: 100%;
+    width: rem(60);
     border-top: solid 1px $green;
     @include mq(md) {
         width: rem(280);
@@ -66,60 +68,83 @@
 
 
 
+.campaign__buttons{
+    margin-top: rem(31.34);
+    @include mq(md) {
+        margin-top: rem(36);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 rem(26);
+    }
+}
 
+.campaign__button + .campaign__button{
+    margin-top: rem(24);
+    @include mq(md) {
+        margin-top: rem(0);
+    }
+}
 
-.button a {
+.campaign__buttons a {
     display: inline-block;
 }
 
-.button--block a {
-    display: block;
-}
 
-.button__box {
+
+.campaign__button {
     position: relative;
     z-index: 1;
 }
 
-.button__comment {
+.campaign__button-comment {
     position: absolute;
-    top: -40%;
+    top: -23%;
     left: 50%;
     transform: translateX(-50%);
-    width: rem(195);
-    height: rem(34);
+    width: rem(175);
+    height: rem(22);
     z-index: 100;
     @include mq(md) {
-        width: rem(307);
-        height: rem(54);
+        top: -15%;
+        width: rem(279);
+        height: rem(36);
     }
 }
 
-.button__item  {
-    font-family: $second-family;
-    background: $green;
+.campaign__button-text  {
     position: relative;
+    background: $green;
     color: $white;
-    font-size: rem(20);
-    font-weight: $semiBold;
-    padding-right: rem(20);
-    letter-spacing: 0.08em;
-    width: rem(281);
-    height: rem(51.5);
-    border-radius: rem(50);
+    font-size: rem(13.87);
+    font-weight: $bold; 
+    letter-spacing: 0.01em;
+    padding-left: rem(4);
+    width: rem(245);
+    padding-top: rem(12.5);
+    padding-bottom: rem(12);
+    border-radius: rem(27);
+    border: solid 2.69px $darkgreen;
     z-index: 1;
     transition: 0.4s;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    box-shadow: 0px 0px 10.76px rgba(0, 0, 0, 0.29);
     @include mq(md) {
-        width: rem(506);
-        height: rem(87);
-        padding-right: rem(64);   
-        font-size: rem(32);
+        width: rem(389);
+        font-size: rem(22);
+        padding-top: rem(22);
+        padding-bottom: rem(22);    
+        border-radius: rem(86.07);
     }
 }
 
-.button__item span::after {
-	background-image: url(../images/common/button-icon.webp);
+.campaign__button-text--white{
+    background: $white;
+    color: $green;
+}
+
+.campaign__button-text span::after {
+	background-image: url(../images/common/button-icon-whitearrow.webp);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -127,22 +152,27 @@
     position: absolute;
     top: 50%;
     right: rem(28);
-    width: rem(21);
-	height: rem(21);
+    width: rem(11.34);
+	height: rem(11.34);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
     @include mq(md) {
-        right: rem(74);
-        width: rem(42);
-        height: rem(42);
+        top: 51%;
+        right: rem(50);
+        width: rem(18);
+        height: rem(18);
     }
 }
 
-.button__item:hover{
+.campaign__button-text--white span::after{
+	background-image: url(../images/common/button-icon-greenleft.webp);
+}
+
+.campaign__button-text:hover{
     opacity: 0.5;
 }
 
-.button__item:hover span::after {
+.campaign__button-text:hover span::after {
     right: rem(24); /* ここで右に移動する値を指定します */
     transition: 0.4s right; /* rightの移動に対するアニメーション */
     @include mq(md) {

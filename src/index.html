@@ -24,7 +24,7 @@
     <!-- フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">    
     
     <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -248,7 +248,7 @@
     <!-------------------------------- 
     キャンペーン実施中！今すぐWeb無料相談へ
     --------------------------------->
-    <section class="campaign">
+    <section class="top-campaign campaign">
         <div class="campaign__inner">
             <div class="campaign__content">
                 <div class="campaign__heading">
@@ -257,26 +257,107 @@
                     <div class="campaign__border"></div>
                 </div>
 
-                <button class="hospital__buttons button">
-                    <a href="https://lstep.app/XccSwb0" target="_blank">
-                        <div class="button__box">
-                            <img class="button__comment" src="./assets/images/common/button-text-pink.webp" alt="まずはお気軽にご相談を" loading="lazy">
-                            <div class="button__item button__item--trust-color">
+                <div class="campaign__buttons ">
+                    <div class="campaign__button">
+                        <a href="" target="_blank">
+                            <img class="campaign__button-comment" src="./assets/images/common/comment-present.webp" alt="まずはお気軽にご相談を" loading="lazy">
+                            <button class="campaign__button-text">
                                 <span>まずは資料請求する</span>
-                            </div>
-                        </div>
-                    </a>
-                </button>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="campaign__button">
+                        <a href="" target="_blank">
+                            <img class="campaign__button-comment" src="./assets/images/common/comment-campaign.webp" alt="まずはお気軽にご相談を" loading="lazy">
+                            <button class="campaign__button-text campaign__button-text--white">
+                                <span>気軽に相談してみる</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
     
-    
-    
-    
+
     <main>
+        <!-------------------------------- 
+        顧客の売上最大化をサポートします
+        --------------------------------->
+        <section class="top-connect connect">
+            <div class="connect__inner">
+                <section class="connect__head section-head">
+                    <p class="section-head__en">what&nbsp;is&nbsp;lm-connect</p>
+                    <h2 class="section-head__title section-head__title--connect">
+                        <div class="section-head__connect-flex">
+                            <span class="section-head__connect-first">LINE</span>
+                            <span class="section-head__connect-second">/</span>
+                            <span class="section-head__connect-third">メール</span>
+                            <span class="section-head__connect-four">ツールを活用して<br></span>
+                        </div>
+                        <span class="section-head__connect-five">顧客の売上最大化<br class="u-mobile"></span>
+                        <span class="section-head__connect-six">をサポートします</span>
+                    </h2>
+                    <div class="section-head__border"></div>
+                </section>
+
+                <figure class="connect__img">
+                    <picture loading="lazy">
+                        <source srcset="./assets/images/common/connect-main.webp" media="(min-width: 768px)">
+                        <img src="./assets/images/common/connect-main-sp.webp" alt="全て追加費用なし！！">
+                    </picture>
+                </figure>
+
+                <div class="connect__sentence">
+                    <p class="connect__text">
+                        LMコネクトでは、身近な人や今あなたのサービスを知ってる人に対して的確にサービスを届けるためのお手伝いをします。LINE内からセミナーの設計、プロモーションの設計まで全てを
+                        <span>追加費用なしで対応。</span>
+                        自社にLINEマーケ担当を採用するコストで、プロのマーケターによるスピーディーで高品質なサポートが受けられます。
+                    </p>
+                </div>
+            </div>
+
+            <figure class="connect__consultation">
+                <picture loading="lazy">
+                    <source srcset="./assets/images/common/connect-consultation.webp" media="(min-width: 768px)">
+                    <img src="./assets/images/common/connect-consultation-sp.webp" alt="お客様の悩みの一覧">
+                </picture>
+            </figure>
+
+            <h3 class="connect__subtitle">
+                <picture loading="lazy">
+                    <source srcset="./assets/images/common/connect-subtitle.webp" media="(min-width: 768px)">
+                    <img src="./assets/images/common/connect-subtitle-sp.webp" alt="その悩み、LM-コネクトで解決できます！">
+                </picture>
+            </h3>
+        </section>
+
+
+
+
     
+
+
+        <!-------------------------------- 
+        LMコネクトが多くのお客様に選ばれる3つの理由
+        --------------------------------->
+        <section class="choose">
+            <div class="choose__inner">
+                <div class="section__head section-head">
+                    <p class="section-head__en">flow</p>
+                    <h2 class="section-head__title">サービス導入まで<span>の</span>流れ</h2>
+                    <div class="section-head__border"></div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
         <!-- <section class="section__head section-head">
             <p class="section-head__en">flow</p>
             <h2 class="section-head__title">サービス導入まで<span>の</span>流れ</h2>
@@ -303,7 +384,7 @@
     <!-------------------------------- 
         LINEでの集客から受注までワンストップでサポート
     --------------------------------->
-    <section class="support">
+    <!-- <section class="support">
         <div class="support__heading">
             <div class="support__flex">
                 <div class="support__topLine"></div>
@@ -353,14 +434,14 @@
                 </div>
             </li>
         </ul>
-    </section>
+    </section> -->
         
         
         
     <!-------------------------------- 
         footer
     --------------------------------->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__inner">
             <div class="footer__content">
                 <div class="footer__wrapper">
@@ -437,7 +518,7 @@
                 <small>COPYRIGHT FUBAR INC. ALL RIGHT RESERVED</small>
             </p>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 </html>
