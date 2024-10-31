@@ -85,6 +85,10 @@
 
 .section-head__connect-four{
     font-size: rem(20);
+    text-shadow:1px 1px 0 $white, -1px -1px 0 $white,
+    -1px 1px 0 $white, 1px -1px 0 $white,
+    0px 1px 0 $white,  0-1px 0 $white,
+    -1px 0 0 $white, 1px 0 0 $white;
     @include mq(md) {
         font-size: rem(36);
     }
@@ -100,7 +104,23 @@
 
 .section-head__connect-six{
     font-size: rem(24);
+    text-shadow:1px 1px 0 $white, -1px -1px 0 $white,
+    -1px 1px 0 $white, 1px -1px 0 $white,
+    0px 1px 0 $white,  0-1px 0 $white,
+    -1px 0 0 $white, 1px 0 0 $white;
     @include mq(md) {
         font-size: rem(36);
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+// choose

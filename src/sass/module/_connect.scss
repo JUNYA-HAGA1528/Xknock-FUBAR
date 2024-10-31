@@ -3,12 +3,12 @@
 
 .connect{
     background-image: url('../images/common/connect-bg-sp.png');
-    background-position: center calc(50% - 72px); /* 中央から10px上に移動 */
+    background-position: center calc(50% - 29%); /* 中央から10px上に移動 */
     background-repeat: no-repeat;
     background-size: rem(348) rem(455);
     @include mq(md) {
         background-image: url('../images/common/connect-bg.png');
-        background-position: center calc(50% - 55px); /* 中央から10px上に移動 */
+        background-position: center calc(50% - 20%); /* 中央から10px上に移動 */
         background-repeat: no-repeat;
         background-size: rem(2220) rem(513);
     }
