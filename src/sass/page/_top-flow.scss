@@ -3,4 +3,8 @@
 
 .top-flow{
     margin-top: rem(80);
+    padding-bottom: rem(100);
+    @include mq(md) {
+        padding-bottom: rem(65);
+    }
 }

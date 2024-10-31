@@ -1,2 +1,99 @@
 @use "global" as *;
 
+.flow__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(35);
+    @include mq(md) {
+        max-width: rem(1118);
+        padding: 0 rem(25);
+    }
+}
+
+
+
+
+
+
+.flow__list{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(82);
+    }
+}
+
+.flow__item{
+    display: flex;
+    gap: 0 rem(18);
+    @include mq(md) {
+        gap: 0;
+        flex-direction: column;
+    }
+}
+
+.flow__item + .flow__item{
+    margin-top: rem(-15);
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.flow__topWrapper{
+    @include mq(md) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+.flow__step{
+    @include mq(md){
+        max-width: calc(25% - 1.25rem * 3 / 4 );
+        width: 100%;
+    }
+}
+
+.flow__step + .flow__step{
+    margin-top: rem(20);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(20);
+    }
+}
+
+
+
+
+
+.flow__sales{
+    margin-top: rem(58);
+    @include mq(md) {
+        width: rem(1068);
+        height: rem(50);
+        margin: rem(20) auto 0;
+    }
+}
+
+.flow__sales.flow__sales--second{
+    margin-top: rem(20);
+    height: rem(974);
+    @include mq(md) {   
+        width: rem(795);
+        height: rem(50);
+        margin: rem(20) auto 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
