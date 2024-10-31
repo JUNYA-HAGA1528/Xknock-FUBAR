@@ -124,3 +124,12 @@
 
 
 // choose
+.section-head__title-choose{
+    width: rem(335);
+    height: rem(79);
+    margin: 0 auto;
+    @include mq(md) {
+        width: rem(911);
+        height: rem(58);        
+    }
+}

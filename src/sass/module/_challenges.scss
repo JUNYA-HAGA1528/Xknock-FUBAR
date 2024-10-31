@@ -1,0 +1,10 @@
+@use "global" as *;
+
+
+.challenges{
+    background-color: $green;
+    padding: rem(80) 0;
+    @include mq(md) {
+        padding: rem(98.5) 0 rem(82.5);
+    }
+}
