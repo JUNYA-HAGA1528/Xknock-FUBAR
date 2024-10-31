@@ -4,7 +4,206 @@
 .challenges{
     background-color: $green;
     padding: rem(80) 0;
+    text-align: center;
     @include mq(md) {
         padding: rem(98.5) 0 rem(82.5);
+    }
+}
+
+.challenges__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1229);
+        padding: 0 rem(25);
+    }
+}
+
+.challenges__list{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(82);
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.challenges__item{
+    padding-top: rem(24);
+    background-color: $white;
+    border-radius: rem(8);
+    border: solid 1px $darkgreen;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    @include mq(md){
+        padding-top: rem(22);
+        max-width: calc(33.3333% - 1.875rem * 2 / 3 );
+        width: 100%;
+    }
+}
+
+.challenges__item + .challenges__item{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(30);
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.challenges__item:nth-child(3n + 1){
+    @include mq(md){
+        margin-left: 0;
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.challenges__item:nth-child(n + 4){
+    @include mq(md){
+        margin-top: 2.5rem;
+    }
+}
+
+.challenges__title{
+    background-color: $darkgreen;
+    color: $white;
+    font-size: rem(28);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: rem(68.5);
+    @include mq(md) {
+        height: rem(75);
+        font-size: rem(32);
+    }
+}
+
+.challenges__title-top{
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: calc(23.7/16);
+    @include mq(md) {
+        font-size: rem(22);
+        line-height: calc(26/22);
+    }
+}
+
+.challenges__img{
+    width: rem(192);
+    height: rem(144);
+    margin: rem(18) auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq(md) {
+        width: rem(210);
+        height: rem(157);
+        min-height: rem(175);
+        margin: rem(25) auto rem(20);      
+    }
+}
+
+.challenges__img--second{
+    width: rem(236);
+    height: rem(151);
+    @include mq(md) {
+        width: rem(259);
+        height: rem(167);
+    }
+}
+
+.challenges__img--third{
+    width: rem(208);
+    height: rem(150);
+    @include mq(md) {
+        width: rem(229);
+        height: rem(160);
+    }
+}
+
+
+
+.challenges__content{
+    background-color: #F6F6F6;
+    padding: rem(40) rem(30) rem(20);
+    border-radius: rem(8);
+    display: flex;
+    flex-direction: column;
+    
+    flex-grow: 1;
+    @include mq(md) {
+        padding: rem(43) rem(32) rem(30);
+    }
+}
+
+.challenges__wrapper{
+    border-top: 1px dotted $darkgreen; /* 下側に1pxの黒い点線 */
+    flex-grow: 1;
+}
+
+
+.challenges__box{
+    display: flex;
+    align-items: center;
+    gap: 0 rem(9.14);
+    padding: rem(9.5) 0;
+    border-bottom: 1px dotted $darkgreen; /* 下側に1pxの黒い点線 */
+    @include mq(md) {
+        gap: 0 rem(10);
+        padding: rem(10.5) 0;
+    }
+}
+
+.challenges__box img {
+    width: rem(23.77);
+    height: rem(23.77);
+    @include mq(md) {
+        width: rem(26);
+        height: rem(26);
+    }
+}
+
+.challenges__box dd {
+    text-align: left;
+    font-size: rem(15);
+    font-weight: $medium;
+    line-height: 1.4;
+    @include mq(md) {
+        font-size: rem(16);
+        line-height: 1.5;
+    }
+}
+
+.challenges__box span {
+    color: $green;
+    font-size: rem(10);
+    font-weight: $medium;
+    @include mq(md) {
+        font-size: rem(12);
+    }
+}
+
+
+
+
+.challenges__remarks{
+    color: $darkgreen;
+    margin-top: rem(15);
+    font-size: rem(16);
+    font-weight: $medium;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-grow: 1;
+    @include mq(md) {
+        margin-top: rem(8);
+        font-size: rem(18);
     }
 }

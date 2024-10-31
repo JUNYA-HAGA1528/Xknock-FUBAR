@@ -1,0 +1,82 @@
+@use "global" as *;
+
+.middle{
+    background-color: $green;
+    text-align: center;
+    padding: rem(20) 0;
+    @include mq(md) {
+        max-width: rem(1180);
+        margin: rem(60) auto 0;
+        padding: rem(14) 0;
+    }
+}
+
+.middle__bg{
+    background-image: url('../images/common/middle-bg-sp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: rem(475) rem(64);
+    @include mq(md) {
+        background-image:none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 rem(30); 
+    }
+}
+
+.middle__frame{
+    font-family: $third-font;
+    text-align: center;
+    background-color: $darkgreen;
+    color: $white;
+    margin: 0 auto;
+    width: rem(144);
+    font-size: rem(16);
+    font-weight: $highBold;
+    letter-spacing: 0.01em;
+    border-radius: rem(60);
+    line-height: 1;
+    padding: rem(5.5) 0;
+    @include mq(md) {
+        width: rem(202);
+        margin: 0;
+        font-size: rem(18);
+        padding: rem(3.5) 0;
+    }
+}
+
+.middle__frame span {
+    color: $yellow;
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
+
+.middle__trail{
+    color: $white;
+    margin-top: rem(12);
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1.37;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        margin-top: rem(0);
+        font-size: rem(24);
+        font-weight: $highBold;
+    }
+}
+
+.middle__trail span {
+    color: $yellow;
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(24);
+        font-weight: $highBold;
+    }
+}

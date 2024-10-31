@@ -1,0 +1,375 @@
+@use "global" as *;
+.case{
+    background-image: url('../images/common/case-bg-sp.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: rem(80) 0 rem(34);
+    @include mq(md) {
+        background-image: url('../images/common/case-bg.png');
+        background-position: center calc(50% - 40%); /* 中央から10px上に移動 */
+        background-repeat: no-repeat;
+        background-size: 100% rem(750);
+        padding: rem(91) 0 0;
+    }
+}
+
+.case__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(958);
+        padding: 0 rem(25);
+    }
+}
+
+.case__en{
+    font-family: $second-font;
+    color: #E5BE1C;
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    text-shadow:1px 1px 0 $white, -1px -1px 0 $white,
+    -1px 1px 0 $white, 1px -1px 0 $white,
+    0px 1px 0 $white,  0-1px 0 $white,
+    -1px 0 0 $white, 1px 0 0 $white;
+}
+
+.case__comment{
+    margin: rem(20) auto 0;
+    width: rem(320);
+    height: rem(84);
+    @include mq(md) {
+        margin: rem(22) auto 0;
+        width: rem(380);
+        height: rem(100); 
+    }
+}
+
+.case__title{
+    margin-top: rem(19.79);
+    color: $green;
+    font-size: rem(32);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        margin-top: rem(0);
+        font-size: rem(48);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//リスト
+.case__list{
+    margin-top: rem(60);
+    @include mq(md){
+        margin-top: rem(40);
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.case__item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    @include mq(md){
+        max-width: calc(50% - 3.75rem * 1 / 2 );
+        width: 100%;
+    }
+}
+
+.case__item + .case__item{
+    margin-top: rem(40);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: rem(60);
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.case__item:nth-child(2n + 1){
+    @include mq(md){
+        margin-left: 0;
+    }
+}
+
+/* 枚数が増えたときのための処理 */
+.case__item:nth-child(n + 3){
+    @include mq(md){
+        margin-top: 8.25rem;
+    }
+}
+
+
+
+
+.case__example{
+    font-size: rem(25.66);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}
+
+.case__example span {
+    font-size: rem(32.08);
+    font-weight: $regular;
+    @include mq(md) {
+        font-size: rem(40);
+    }
+}
+
+.case__card {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: rem(18.89) rem(0) rem(32.08);
+    background-color: $white;
+    border: solid 3px $green;
+    border-radius: rem(8);
+    @include mq(md) {
+        padding: rem(20) rem(0) rem(40);
+    }
+}
+
+.case__company{
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 rem(14.5);
+    min-height: rem(60);
+    @include mq(md) {
+        gap: 0 rem(18);
+        min-height: rem(75);
+    }
+}
+
+.case__companyName{
+    background-color: $darkgreen;
+    color: $white;
+    width: rem(158);
+    border-radius: rem(50);
+    font-size: rem(12.83);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    line-height: 1.2;
+    @include mq(md) {
+        width: rem(198);
+        font-size: rem(16);
+    }
+}
+
+.case__companyPrice{
+    color: $white;
+    font-size: rem(19.25);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        font-size: rem(24);
+    }
+}
+
+.case__companyPrice span {
+    font-size: rem(25.66);
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}
+
+.case__sentence{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+    padding: rem(36) rem(14) rem(0);
+    border-radius: rem(4);
+    @include mq(md) {
+        padding: rem(46) rem(19) rem(0);
+    }
+}
+
+.case__text{
+    flex-grow: 1;
+    font-size: rem(16.07);
+    font-weight: $bold;
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
+
+.case__text span {
+    color: $darkgreen;
+}
+
+.case__request{
+    margin-top: rem(17.06);
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+}
+
+.case__request-title{
+    font-size: rem(17.64);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        font-size: rem(22);
+    }
+}
+
+.case__request-wrapper{
+    padding: 0 rem(16);
+    @include mq(md) {
+        padding: 0 rem(20);
+    }
+}
+
+.case__request-box{
+    margin-top: rem(6.08);
+    display: flex;
+    align-items: center;
+    gap: 0 ;
+    @include mq(md) {
+        margin-top: rem(8);
+    }
+}
+
+.case__request-border{
+    width: 100%;
+    border-top: 1px dashed $green; /* 1pxの黒い点線 */
+}
+
+.case__request-check{
+    width: rem(35);
+    height: rem(35);
+    margin: 0 auto;
+    @include mq(md) {
+        width: rem(44);
+        height: rem(44);
+    }
+}
+
+.case__request-sentence{
+    padding: rem(8) 0 rem(15.8);
+    @include mq(md) {
+        padding: rem(10) 0 rem(20);
+    }
+}
+
+.case__request-text{
+    font-size: rem(14.43);
+    font-weight: $medium;
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.case__request-text + .case__request-text{
+    margin-top: rem(7.87);
+    @include mq(md) {
+        margin-top: rem(10);
+    }
+}
+
+.case__request-img{
+    margin-top: rem(24);
+    padding: 0 rem(16);
+    @include mq(md) {
+        margin-top: rem(30);
+        padding: 0 rem(20);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.case__button{
+    margin-top: rem(60);
+}
+
+.case__button-text {
+    text-align: center;
+    position: relative;
+    background: $green;
+    color: $white;
+    border: solid 2.69px $darkgreen;
+    font-size: rem(13.93);
+    font-weight: $bold; 
+    letter-spacing: 0.01em;
+    padding-left: rem(4);
+    width: rem(245);
+    padding-top: rem(14);
+    padding-bottom: rem(16);
+    border-radius: rem(27);
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    box-shadow: 0px 0px 10.76px rgba(0, 0, 0, 0.29);
+    @include mq(md) {
+        width: rem(389);
+        font-size: rem(22);
+        padding-top: rem(21);
+        padding-bottom: rem(21);    
+        border-radius: rem(86.07);
+    }
+}
+
+.case__button-text span::after {
+	background-image: url(../images/common/whitearrow.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 48%;
+    right: rem(30);
+    width: rem(15);
+	height: rem(15);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md) {
+        top: 50%;
+        right: rem(50);
+        width: rem(20);
+        height: rem(20);    
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.case__button-text:hover{
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    cursor: pointer;
+}

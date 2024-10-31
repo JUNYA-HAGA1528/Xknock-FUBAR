@@ -13,6 +13,10 @@
     font-size: rem(16);
     font-weight: $bold;
     letter-spacing: 0.04em;
+    text-shadow:1px 1px 0 $white, -1px -1px 0 $white,
+    -1px 1px 0 $white, 1px -1px 0 $white,
+    0px 1px 0 $white,  0-1px 0 $white,
+    -1px 0 0 $white, 1px 0 0 $white;
 }
 
 .section-head__title{
@@ -131,5 +135,66 @@
     @include mq(md) {
         width: rem(911);
         height: rem(58);        
+    }
+}
+
+
+
+
+// challenges
+.section-head__en--challenges{
+    color: #006F66;
+    text-shadow:0px 0px 0 #006F66, 0px 0px 0 #006F66,
+    0px 0px 0 #006F66, 0px 0px 0 #006F66,
+    0px 0px 0 #006F66,  00px 0 #006F66,
+    0px 0 0 #006F66, 0px 0 0 #006F66;
+}
+
+.section-head__title--challenges{
+    color: $white;
+}
+
+.section-head__title--challenges-first{
+    color: $yellow;
+    font-size: rem(32);
+    @include mq(md) {
+        font-size: rem(48);
+    }
+}
+
+.section-head__title--challenges-second{
+    font-size: rem(24);
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
+
+.section-head__title--challenges-third{
+    font-size: rem(30.46);
+    @include mq(md) {
+        font-size: rem(40);
+    }
+}
+
+.section-head__border--challenges{
+    border-top: solid 3px #006F66;
+    @include mq(md) {
+        border-top: solid 6px #006F66;
+    }
+}
+
+
+
+
+
+
+
+
+
+// flow
+.section-head__title--flow{
+    font-size: rem(24);
+    @include mq(md) {
+        font-size: rem(36);
     }
 }
