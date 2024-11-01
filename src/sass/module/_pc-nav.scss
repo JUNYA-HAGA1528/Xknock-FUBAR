@@ -26,7 +26,9 @@
     background-color: $darkgreen;
     color: $white;
 	margin-left: rem(20);
-	padding: rem(15) 0;
+	padding-top: rem(17);
+	padding-bottom: rem(17);
+	padding-left: rem(-20);
     width: rem(213);
     font-size: rem(15.93);
     border-radius: rem(27);
@@ -37,6 +39,10 @@
     display: flex;
 	align-items: center;
 	gap: 0 rem(10);
+}
+
+.pc-nav__wrapper--contact {
+	gap: 0 rem(20);
 }
 
 .pc-nav__wrapper img {

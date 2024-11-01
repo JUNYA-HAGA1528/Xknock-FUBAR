@@ -11,7 +11,7 @@
         background-position: center calc(50% - 40%); /* 中央から10px上に移動 */
         background-repeat: no-repeat;
         background-size: 100% rem(750);
-        padding: rem(91) 0 0;
+        padding: rem(85) 0 0;
     }
 }
 
@@ -312,6 +312,7 @@
 }
 
 .case__button-text {
+    font-family: $third-font;
     text-align: center;
     position: relative;
     background: $green;
@@ -352,7 +353,7 @@
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
     @include mq(md) {
-        top: 50%;
+        top: 48%;
         right: rem(50);
         width: rem(20);
         height: rem(20);    

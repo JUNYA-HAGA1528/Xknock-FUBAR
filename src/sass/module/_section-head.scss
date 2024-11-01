@@ -39,6 +39,7 @@
     margin: rem(20) auto 0;
     border-top: solid 3px $darkgreen;
     @include mq(md) {
+        margin: rem(23) auto 0;
         border-top: solid 6px $darkgreen;
     }
 }
@@ -107,10 +108,7 @@
 
 .section-head__connect-six{
     font-size: rem(24);
-    text-shadow:1px 1px 0 $white, -1px -1px 0 $white,
-    -1px 1px 0 $white, 1px -1px 0 $white,
-    0px 1px 0 $white,  0-1px 0 $white,
-    -1px 0 0 $white, 1px 0 0 $white;
+    text-shadow: none;
     @include mq(md) {
         font-size: rem(36);
     }

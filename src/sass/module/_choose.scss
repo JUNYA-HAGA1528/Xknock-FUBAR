@@ -4,7 +4,7 @@
     background-color: #F6F6F6;
     padding: rem(80) 0 rem(100);
     @include mq(md) {
-        padding: rem(101) 0 rem(135);
+        padding: rem(101) 0 rem(120);
     }
 }
 
@@ -100,6 +100,9 @@
 
 .choose__number--second{
     margin-left: auto;
+    @include mq(md) {
+        margin: 0;
+    }
 }
 
 .choose__subtitle{
@@ -117,6 +120,9 @@
 
 .choose__subtitle--second{
     text-align: right;
+    @include mq(md) {
+        text-align: left;
+    }
 }
 
 .choose__subtitle--third{

@@ -72,7 +72,7 @@
     font-size: rem(15.93);
     font-weight: $bold; 
     letter-spacing: 0.01em;
-    padding-left: rem(4);
+    padding-left: rem(10);
     width: rem(213);
     padding-top: rem(14);
     padding-bottom: rem(16);
@@ -95,6 +95,10 @@
 	height: rem(15);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
+    @include mq(md) {
+        top: 50%;
+        left: rem(35);
+    }
 }
 
 .footer__text:hover{
@@ -106,6 +110,7 @@
 
 .footer__text--green{
     background: $darkgreen;
+    padding-left: rem(15);
 }
 
 .footer__text--green span::after {
@@ -119,5 +124,13 @@
     text-align: center;
     @include mq(md) {
         margin-top: rem(17);
+    }
+}
+
+.footer__copyright small {
+    @include mq(md) {
+        letter-spacing: 0.01em;
+        font-size: rem(12);
+        font-weight: $regular;
     }
 }

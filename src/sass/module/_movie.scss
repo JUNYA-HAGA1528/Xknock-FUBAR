@@ -3,6 +3,26 @@
 .movie{
     text-align: center;
     padding: rem(141) 0 rem(78);
+    background-image: url('../images/common/movie-sp.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mq(md) {
+        background-image: url('../images/common/movie.webp');
+    }
+}
+
+.movie__bg{
+    background-image: url('../images/common/movie-bgText-sp.png');
+    background-position: center calc(50% + 12%); /* 中央から10px上に移動 */
+    background-repeat: no-repeat;
+    background-size: rem(630) rem(572);
+    @include mq(md) {   
+        background-image: url('../images/common/movie-bgText.png');
+        background-position: center calc(50% + 2%); /* 中央から10px上に移動 */
+        background-repeat: no-repeat;
+        background-size: rem(2220) rem(448);
+    }
 }
 
 .movie__inner{
@@ -35,6 +55,7 @@
     gap: rem(7.84);
     margin-top: rem(40);
     @include mq(md) {
+        flex-wrap: nowrap;
         margin-top: rem(58);
         gap: rem(19);
     }
