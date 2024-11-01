@@ -1,0 +1,159 @@
+@use "global" as *;
+
+.helpful{
+    background-color:#EFF9F7 ;
+    padding: rem(80) 0 ;
+    @include mq(md) {
+        padding: rem(100) 0 rem(122);
+    }
+}
+
+.helpful__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    position: relative;
+    @include mq(md) {
+        max-width: rem(1230);
+        padding: 0 rem(25);
+    }
+}
+
+.helpful__img{
+
+    @include mq(md) {
+        width: 100%;
+        height: rem(557);
+    }
+}
+
+.helpful__container {
+    position: absolute;
+    width: 100%; /* 必要に応じて調整 */
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* 重ね順を指定 */
+    @include mq(md) {
+        top: 75%;
+        margin: 0 auto;
+        max-width: rem(1108);
+    }
+}
+
+.helpful__content{
+    text-align: center;
+    @include mq(md) {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 0 rem(54);
+    }
+}
+
+.helpful__sentence{
+    background-color: $green;
+    padding: rem(20) rem(20) rem(23);
+    width: 82%;
+    margin: 0 auto;
+    border-radius: rem(4);
+    @include mq(md) {
+        padding: rem(28) rem(35);
+        width: 62.6%;
+    }
+}
+
+.helpful__text{
+    color: $white;
+    font-size: rem(18);
+    font-weight: $bold;
+    line-height: calc(30/18);
+    text-align: center;
+    @include mq(md) {
+        text-align: left;
+        font-size: rem(24);
+        line-height: 1.4;
+    }
+}
+
+.helpful__text span {
+    color: #FAFF00;
+}
+
+
+
+
+
+
+.helpful__button{
+    margin: rem(30) auto 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq(md) {
+        width: 35.1%;
+        margin: 0;
+    }
+}
+
+.helpful__button-text {
+    position: relative;
+    background: #E5BE1C;
+    color: $white;
+    font-size: rem(13.87);
+    font-weight: $bold; 
+    letter-spacing: 0.01em;
+    padding-left: rem(4);
+    width: rem(245);
+    padding-top: rem(14);
+    padding-bottom: rem(16);
+    border-radius: rem(27);
+    border: solid 2.69px #957F20;
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    box-shadow: 0px 0px 10.76px rgba(0, 0, 0, 0.29);
+    @include mq(md) {
+        width: rem(389);
+        font-size: rem(22);
+        padding-top: rem(21);
+        padding-bottom: rem(21);    
+        border-radius: rem(86.07);
+    }
+}
+
+.helpful__button-text span::after {
+	background-image: url(../images/common/orangearrow.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 49%;
+    right: rem(20);
+    width: rem(15);
+	height: rem(15);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md) {
+        right: rem(40);
+        width: rem(15);
+        height: rem(15);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.helpful__button-text:hover{
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    cursor: pointer;
+}

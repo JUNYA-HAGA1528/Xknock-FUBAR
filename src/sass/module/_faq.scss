@@ -1,0 +1,80 @@
+@use "global" as *;
+
+
+.faq{
+    background-color: $darkgreen;
+    padding: rem(60) 0 rem(80);
+    text-align: center;
+    @include mq(md) {
+        padding: rem(80) 0;
+    }
+}
+
+.faq__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1030);
+        padding: 0 rem(25);
+    }
+}
+
+.faq__en{
+    font-family: $second-font;
+    text-transform: uppercase;
+    color: $green;
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+}
+
+.faq__heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 rem(7);
+    margin-top: rem(20);
+    @include mq(md) {
+        gap: 0 rem(10); 
+    }
+}
+
+.faq__title{
+    color: $white;
+    font-size: rem(28);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
+
+.faq__heading-border{
+    width: rem(60);
+    border-top: solid 1px $white;
+    @include mq(md) {
+        width: rem(348);
+        border-top: solid 2px $white;
+    }
+}
+
+.faq__item + .faq__item{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+}
+
+.faq__border{
+    width: rem(100);
+    margin: rem(20) auto 0;
+    border-top: solid 3px $green;
+    @include mq(md) {
+        border-top: solid 6px $green;
+    }
+}
+
+.fag__accordion{
+    margin-top: rem(60);
+}
