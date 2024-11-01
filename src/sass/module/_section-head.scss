@@ -20,8 +20,6 @@
 }
 
 .section-head__title{
-
-    
     font-size: rem(28);
     font-weight: $bold;
     letter-spacing: 0.04em;
@@ -203,3 +201,75 @@
 
 
 
+// movie
+
+.section-head__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 rem(10);
+    @include mq(md) {
+        gap: 0 rem(26);
+    }
+}
+
+.section-head__youtube{
+    width: rem(40);
+    height: rem(28);
+    @include mq(md) {
+        width: rem(48);
+        height: rem(34);
+    }
+}
+
+.section-head__box-text{
+    font-family: $second-font;
+    font-size: rem(32);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    text-shadow:1px 1px 0 $white, -1px -1px 0 $white,
+    -1px 1px 0 $white, 1px -1px 0 $white,
+    0px 1px 0 $white,  0-1px 0 $white,
+    -1px 0 0 $white, 1px 0 0 $white;
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
+
+.section-head__box-text span {
+    font-family: $base-font;
+    font-size: rem(28);
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}
+
+.section-head__title-movie{
+    text-shadow:1px 1px 0 $white, -1px -1px 0 $white,
+    -1px 1px 0 $white, 1px -1px 0 $white,
+    0px 1px 0 $white,  0-1px 0 $white,
+    -1px 0 0 $white, 1px 0 0 $white;
+}
+
+.section-head__title-movie-first{
+    color: $green;
+    font-size: rem(32);
+    font-weight: $highBold;
+    @include mq(md) {
+        font-size: rem(48);
+    }
+}
+
+.section-head__title-movie-second{
+    font-size: rem(24);
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}
+
+.section-head__title-movie-third{
+    font-size: rem(24);
+    @include mq(md) {
+        font-size: rem(36);
+    }
+}
