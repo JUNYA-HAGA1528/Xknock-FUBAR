@@ -34,12 +34,30 @@
     }
 }
 
-.header__trial{
+@keyframes sparkle {
+    0% {
+        background-position: -100%;
+    }
+    50% {
+        background-position: 200%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}
+
+.header__trial {
     height: rem(49);
+    background-image: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    background-size: 200%;
+    animation: sparkle 4s infinite;
     @include mq(md) {
+        
         height: rem(70);
     }
 }
+
+
 
 .header__sp-nav{
     padding-top: rem(70);

@@ -167,30 +167,83 @@
     color: $black;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .support__button{
-    margin-top: rem(31.57);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: rem(31.34);
+    position: relative;
+    z-index: 1;
     @include mq(md) {
-        margin-top: rem(20);       
+        margin-top: rem(36);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 rem(26);
     }
 }
 
-.support__button-text {
+.support__button-comment {
+    position: absolute;
+    top: -23%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(175);
+    height: rem(22);
+    z-index: 100;
+    @include mq(md) {
+        top: -23%;
+        width: rem(279);
+        height: rem(36);
+    }
+}
+
+.button__bg{
     position: relative;
-    background: $white;
-    color: $green;
+}
+
+.button__bg::before{
+    background-image: url('../images/common/button-free.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(27);
+    left: calc(50% - min(50%, rem(170)));
+    width: rem(32);
+    height: rem(17);
+    z-index: 100;
+    @include mq(md) {
+        width: rem(52);
+        height: rem(28);      
+    }
+}
+
+.support__button-text  {
+    position: relative;
+    background: $green;
+    color: $white;
     font-size: rem(13.87);
     font-weight: $bold; 
     letter-spacing: 0.01em;
     padding-left: rem(4);
     width: rem(245);
-    padding-top: rem(14);
-    padding-bottom: rem(16);
+    padding-top: rem(12.5);
+    padding-bottom: rem(12);
     border-radius: rem(27);
-    border: solid 2.69px $green;
+    border: solid 2.69px $darkgreen;
     z-index: 1;
     transition: 0.4s;
     overflow: hidden;
@@ -198,44 +251,50 @@
     @include mq(md) {
         width: rem(389);
         font-size: rem(22);
-        padding-top: rem(22);
-        padding-bottom: rem(22);    
+        padding-top: rem(20.5);
+        padding-bottom: rem(20.5);    
         border-radius: rem(86.07);
     }
 }
 
-.support__button-text--right{
-    background: $green;
-    color: $white;
-    border: solid 2.69px $darkgreen;
+.support__button-text--white{
+    background: $white;
+    color: $green;
 }
 
 .support__button-text span::after {
-	background-image: url(../images/common/support-icon-arrow.webp);
+	background-image: url(../images/common/whitearrow.webp);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
     position: absolute;
-    top: 48%;
-    left: rem(30);
-    width: rem(15);
-	height: rem(15);
+    top: 50%;
+    right: rem(28);
+    width: rem(11.34);
+	height: rem(11.34);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
+    @include mq(md) {
+        top: 51%;
+        right: rem(50);
+        width: rem(18);
+        height: rem(18);
+    }
 }
 
-
-
-
-
-
-
-
-
+.support__button-text--white span::after{
+	background-image: url(../images/common/arrowgreen.webp);
+}
 
 .support__button-text:hover{
-    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
-    transform: translateY(-5px);
-    cursor: pointer;
+    opacity: 0.5;
+}
+
+.support__button-text:hover span::after {
+    right: rem(24); /* ここで右に移動する値を指定します */
+    transition: 0.4s right; /* rightの移動に対するアニメーション */
+    @include mq(md) {
+        right: rem(66); /* ここで右に移動する値を指定します */
+    }
 }
