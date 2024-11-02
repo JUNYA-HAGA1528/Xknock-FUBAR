@@ -44,7 +44,7 @@
 }
 
 .challenges__item + .challenges__item{
-    margin-top: rem(40);
+    margin-top: rem(60);
     @include mq(md){
         margin-top: 0;
         margin-left: rem(31);
@@ -61,7 +61,7 @@
 /* 枚数が増えたときのための処理 */
 .challenges__item:nth-child(n + 4){
     @include mq(md){
-        margin-top: 2.5rem;
+        margin-top: 3.75rem;
     }
 }
 

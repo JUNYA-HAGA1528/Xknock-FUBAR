@@ -4,7 +4,10 @@
 
 .footer{
     background-color: #EFF9F7;
-    padding: rem(28) 0 rem(20);
+    padding: rem(80) 0 rem(20);
+    @include mq(md) {
+        padding: rem(28) 0 rem(20);
+    }
 }
 
 .footer__inner{
@@ -128,9 +131,10 @@
 }
 
 .footer__copyright small {
+    font-size: rem(10);
+    font-weight: $regular;
+    letter-spacing: 0.01em;
     @include mq(md) {
-        letter-spacing: 0.01em;
         font-size: rem(12);
-        font-weight: $regular;
     }
 }

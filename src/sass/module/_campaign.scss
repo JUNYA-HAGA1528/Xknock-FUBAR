@@ -47,6 +47,13 @@
     }
 }
 
+.campaign__title span {
+    font-size: rem(18);
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
 .campaign__border{
     width: rem(60);
     border-top: solid 1px $green;
@@ -99,7 +106,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: rem(175);
-    height: rem(22);
+    height: rem(23);
     z-index: 100;
     @include mq(md) {
         top: -15%;
@@ -120,7 +127,7 @@
     padding-top: rem(12.5);
     padding-bottom: rem(12);
     border-radius: rem(27);
-    border: solid 2.69px $darkgreen;
+    border: solid 1.69px $darkgreen;
     z-index: 1;
     transition: 0.4s;
     overflow: hidden;
@@ -131,10 +138,12 @@
         padding-top: rem(20.5);
         padding-bottom: rem(20.5);    
         border-radius: rem(86.07);
+        border: solid 2.69px $darkgreen;
     }
 }
 
 .campaign__button-text--white{
+    font-family: $third-font;
     background: $white;
     color: $green;
 }

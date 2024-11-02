@@ -2,7 +2,7 @@
 
 .movie{
     text-align: center;
-    padding: rem(141) 0 rem(78);
+    padding: rem(124) 0 rem(80);
     background-image: url('../images/common/movie-sp.webp');
     background-position: center;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 
 .movie__bg{
     background-image: url('../images/common/movie-bgText-sp.png');
-    background-position: center calc(50% + 12%); /* 中央から10px上に移動 */
+    background-position: center calc(50% + 18%); /* 中央から10px上に移動 */
     background-repeat: no-repeat;
     background-size: rem(630) rem(572);
     @include mq(md) {   

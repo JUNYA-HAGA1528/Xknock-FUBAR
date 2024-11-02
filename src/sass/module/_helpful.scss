@@ -105,8 +105,8 @@
     letter-spacing: 0.01em;
     padding-left: rem(4);
     width: rem(245);
-    padding-top: rem(14);
-    padding-bottom: rem(16);
+    padding-top: rem(12);
+    padding-bottom: rem(12);
     border-radius: rem(27);
     border: solid 2.69px #957F20;
     z-index: 1;
@@ -129,13 +129,14 @@
 	background-size: contain;
 	content: "";
     position: absolute;
-    top: 49%;
+    top: 47%;
     right: rem(20);
     width: rem(15);
 	height: rem(15);
 	transform: translateY(-50%);
 	transition: 0.4s background-color;
     @include mq(md) {
+        top: 49%;
         right: rem(40);
         width: rem(15);
         height: rem(15);

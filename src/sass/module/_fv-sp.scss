@@ -51,7 +51,10 @@
 .fv-sp__inner{
     max-width: $max-width;
     margin: 0 auto;
-    padding: 0 0 0 rem(25);
+}
+
+.fv-sp__sentence{
+    padding-left: rem(25);
 }
 
 .fv-sp__subtitle{
@@ -130,7 +133,7 @@ span.marker {
     display: inline-block;
     background-color: $white;
     color: $darkgreen;
-    margin-top: rem(11.75);
+    margin-top: rem(10.75);
     padding: rem(0) rem(7);
     font-size: rem(12);
     font-weight: $bold;

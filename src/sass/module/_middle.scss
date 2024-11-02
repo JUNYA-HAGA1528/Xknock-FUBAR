@@ -26,7 +26,6 @@
 }
 
 .middle__frame{
-    font-family: $third-font;
     text-align: center;
     background-color: $darkgreen;
     color: $white;
@@ -47,6 +46,7 @@
 }
 
 .middle__frame span {
+    font-family: $third-font;
     color: $yellow;
     font-size: rem(24);
     font-weight: $bold;

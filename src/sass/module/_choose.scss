@@ -147,12 +147,12 @@
     font-size: rem(16);
     font-weight: $regular;
     line-height: calc(2);
-    letter-spacing: 0.015em;
     @include mq(md) {
         margin-top: rem(30);
         padding-right: rem(15);
         max-width: rem(421);
         width: 100%;
+        letter-spacing: 0.015em;
     }
 }
 

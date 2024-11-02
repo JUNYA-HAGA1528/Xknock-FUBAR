@@ -220,12 +220,14 @@
     background-size: contain;
     position: absolute;
     content: "";
-    top: rem(27);
-    left: calc(50% - min(50%, rem(170)));
+    top: rem(17);
+    left: calc(50% - min(50%, rem(110)));
     width: rem(32);
     height: rem(17);
     z-index: 100;
     @include mq(md) {
+        top: rem(27);
+        left: calc(50% - min(50%, rem(170)));    
         width: rem(52);
         height: rem(28);      
     }
@@ -254,6 +256,23 @@
         padding-top: rem(20.5);
         padding-bottom: rem(20.5);    
         border-radius: rem(86.07);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%; // 初期位置をボタンの左外に設定
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.5), transparent); // 光のライン
+        transform: skewX(-25deg);
+        transition: 0.4s;
+    }
+
+    &:hover::before {
+        left: 100%; // マウスオーバー時に右に移動させて、光が通り抜けるように
+        transition: 0.4s; // 移動アニメーションの時間を調整
     }
 }
 
@@ -287,14 +306,3 @@
 	background-image: url(../images/common/arrowgreen.webp);
 }
 
-.support__button-text:hover{
-    opacity: 0.5;
-}
-
-.support__button-text:hover span::after {
-    right: rem(24); /* ここで右に移動する値を指定します */
-    transition: 0.4s right; /* rightの移動に対するアニメーション */
-    @include mq(md) {
-        right: rem(66); /* ここで右に移動する値を指定します */
-    }
-}

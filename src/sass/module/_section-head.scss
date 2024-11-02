@@ -9,6 +9,7 @@
 .section-head__en{
     font-family: $second-font;
     text-transform: uppercase;
+    padding-bottom: rem(20);
     color: #E5BE1C;
     font-size: rem(16);
     font-weight: $bold;
@@ -17,6 +18,9 @@
     -1px 1px 0 $white, 1px -1px 0 $white,
     0px 1px 0 $white,  0-1px 0 $white,
     -1px 0 0 $white, 1px 0 0 $white;
+    @include mq(md) {
+        padding-bottom: 0;
+    }
 }
 
 .section-head__title{

@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .top-connect{
-    margin-top: rem(79);
+    margin-top: rem(80);
     @include mq(md) {
         margin-top: rem(81);
     }

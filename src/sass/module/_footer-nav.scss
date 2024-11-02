@@ -32,14 +32,26 @@
     }
 }
 
-.footer-nav__text{
+.footer-nav__text {
     color: $darkgreen;
     font-size: rem(16);
     font-weight: $bold;
     letter-spacing: 0.01em;
+    position: relative;
+    overflow: hidden;
 }
 
+.footer-nav__text::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* 下線の太さを調整 */
+    background-color: #11998E;
+    transition: width 0.3s ease;
+}
 
-
-
-
+.footer-nav__text:hover::after {
+    width: 100%;
+}

@@ -75,9 +75,8 @@
 
 //リスト
 .case__list{
-    margin-top: rem(60);
+    margin-top: rem(40);
     @include mq(md){
-        margin-top: rem(40);
         display: flex;
         flex-wrap: wrap;
     }
@@ -323,8 +322,8 @@
     letter-spacing: 0.01em;
     padding-left: rem(4);
     width: rem(245);
-    padding-top: rem(14);
-    padding-bottom: rem(16);
+    padding-top: rem(13);
+    padding-bottom: rem(11);
     border-radius: rem(27);
     z-index: 1;
     transition: 0.4s;
@@ -346,7 +345,7 @@
 	background-size: contain;
 	content: "";
     position: absolute;
-    top: 48%;
+    top: 49%;
     right: rem(30);
     width: rem(15);
 	height: rem(15);
