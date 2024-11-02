@@ -1,0 +1,124 @@
+@use "global" as *;
+
+.sub-fv{
+    text-align: center;
+}
+
+.sub-fv__inner{
+    position: relative;
+}
+
+.sub-fv__inner::before{
+    background-image: url('../images/common/sub-bg-left-sp.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(30);
+    left: calc(50% - min(50%, rem(150)));
+    width: rem(62);
+    height: rem(116);
+    z-index: 1;
+    @include mq(md) {   
+        background-image: url('../images/common/sub-bg-left.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";
+        top: rem(30);
+        left: calc(50% - min(50%, rem(685)));
+        width: rem(384);
+        height: rem(231);
+        z-index: 1;
+    }
+}
+.sub-fv__bg{
+    position: relative;
+}
+
+.sub-fv__bg::before{   
+    background-image: url('../images/common/sub-bg-right-sp.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    content: "";
+    top: rem(14);
+    right: calc(50% - min(50%, rem(160)));
+    width: rem(65);
+    height: rem(120);
+    z-index: 1;
+    @include mq(md) {   
+        background-image: url('../images/common/sub-bg-right.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        content: "";
+        top: auto;
+        bottom: rem(30);
+        right: calc(50% - min(50%, rem(700)));
+        width: rem(384);
+        height: rem(231);
+        z-index: 1;
+    }
+}
+
+.sub-fv__bg-color{
+    position: relative;
+    margin-top: rem(60);
+    @include mq(md) {
+        margin-top: rem(81);
+    }
+}
+
+.sub-fv__img img{
+    height: rem(160);
+    object-fit: cover;
+    @include mq(md){
+        height: rem(317);
+        
+    }
+}
+
+.sub-fv__sentence{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-fv__subtitle{
+    font-size: rem(16);
+    font-weight: $bold;
+    letter-spacing: 0.14em;
+    @include mq(md) {
+        font-size: rem(24);
+    }
+}
+
+.sub-fv__title{
+    margin-top: rem(6);
+    text-transform: uppercase;
+    color: $green;
+    font-size: rem(32);
+    font-weight: $bold;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    @include mq(md){
+        margin-top: rem(13);
+        font-size: rem(64);
+    }
+}
+
+.sub-fv__bottomLine{
+    margin: rem(13) auto 0;
+    border-top: 3px solid #19AA8B;
+    width: rem(100);
+    @include mq(md) {
+        border-top: 6px solid #19AA8B;
+        margin: rem(23) auto 0;
+    }
+}

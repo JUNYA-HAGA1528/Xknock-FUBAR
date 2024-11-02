@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.breadcrumb{
+    padding-top: rem(20);
+    font-size: rem(12);
+    font-weight: $medium;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
+
+.breadcrumb__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(1229);
+        padding: 0 rem(25);
+    }
+}

@@ -1,0 +1,224 @@
+@use "global" as *;
+
+
+
+.page-company{
+    text-align: center;
+}
+
+.page-company__inner{
+    max-width: $max-width;
+    margin: auto;
+    @include mq(md) {
+        max-width: rem(1030);
+        padding: 0 rem(25);
+    }
+}
+
+.page-company__list{
+    text-align: left;
+    background-color: #EFF9F7;
+    margin-top: rem(60);
+    padding: rem(80) rem(35);
+    @include mq(md) {
+        padding: rem(60) rem(100) rem(80); 
+    }
+}
+
+.page-company__item{
+    @include mq(md) {   
+        display: flex;
+        align-items: center;
+    }
+}
+
+.page-company__item + .page-company__item{
+    margin-top: rem(20);
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.page-company__item dt {
+    font-size: rem(16.3);
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+    padding-bottom: rem(3);
+    position: relative;
+    @include mq(md) {
+        width: 23.07%;
+        font-size: rem(24);
+        padding-bottom: rem(5);
+        border-bottom: solid 1px $darkgreen;
+    }
+}
+
+.page-company__item dt::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* 線の太さ */
+    background: linear-gradient(to right, $darkgreen 30%, #D6D6D6 30%);
+    @include mq(md) {
+        background: none;
+    }
+}
+
+.page-company__item dd {
+    font-size: rem(16.3);
+    font-weight: $regular;
+    letter-spacing: 0.04em;
+    padding-top: rem(10);
+    @include mq(md) {
+        font-size: rem(24);
+        width: 76.93%;
+        border-bottom: solid 1px #D8D8D8;
+        padding-top: 0;
+        padding-bottom: rem(5);
+        padding-left: rem(20);
+    }
+}
+
+.page-company__concept{
+    text-align: left;
+    margin-top: rem(82);
+    padding: 0 rem(35);
+    @include mq(md) {
+        margin-top: rem(120);
+        padding: 0;
+    }
+}
+
+.page-company__wrapper + .page-company__wrapper{
+    margin-top: rem(60);
+}
+
+.page-company__wrapper{
+    @include mq(md) {
+        display: flex;
+        gap: 0 rem(169);
+    }
+}
+
+.page-company__left{
+    @include mq(md) {
+        width: 31.73%;
+    }
+}
+
+.page-company__right{
+    margin-top: rem(40);
+    @include mq(md) {
+        width: 51.02%;
+        margin-top: rem(0);
+    }
+}
+
+.page-company__box{
+    display: flex;
+    align-items: center;
+    gap: 0 rem(10);
+}
+
+.page-company__en{
+    text-transform: uppercase;
+    font-family: $second-font;
+    font-size: rem(32);
+    font-weight: $medium;
+    letter-spacing: 0.01em;
+    color: $darkgreen;
+}
+
+.page-company__border{
+    border-top: solid 1px #000;
+    width: rem(100);
+}
+
+.page-company__jp{
+    margin-top: rem(20);
+    font-size: rem(20);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+}
+
+.page-company__text{
+    font-size: rem(16);
+    font-weight: $medium;
+    line-height: calc(28/16);
+    letter-spacing: 0.01em;
+}
+
+.page-company__text + .page-company__text{
+    margin-top: rem(40);
+    @include mq(md) {
+        margin-top: rem(28);
+    }
+}
+
+
+.page-company__button{
+    text-align: center;
+    margin-top: rem(60);
+    padding-bottom: rem(80);
+    @include mq(md) {
+        margin-top: rem(100);
+        padding-bottom: rem(120);
+    }
+}
+
+.page-company__button-text {
+    font-family: $third-font;
+    text-align: center;
+    position: relative;
+    background: $green;
+    color: $white;
+    border: solid 2.69px $darkgreen;
+    font-size: rem(14.71);
+    font-weight: $bold; 
+    letter-spacing: 0.01em;
+    padding-left: rem(4);
+    width: rem(245);
+    padding-top: rem(13);
+    padding-bottom: rem(11);
+    border-radius: rem(27);
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    box-shadow: 0px 0px 10.76px rgba(0, 0, 0, 0.29);
+    @include mq(md) {
+        width: rem(389);
+        font-size: rem(22);
+        padding-top: rem(21);
+        padding-bottom: rem(21);    
+        border-radius: rem(86.07);
+    }
+}
+
+.page-company__button-text span::after {
+	background-image: url(../images/common/subbutton-arrow.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 49%;
+    right: rem(30);
+    width: rem(15);
+	height: rem(15);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md) {
+        top: 49%;
+        right: rem(35);
+        width: rem(23);
+        height: rem(23);    
+    }
+}
+
+.page-company__button-text:hover{
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    cursor: pointer;
+}

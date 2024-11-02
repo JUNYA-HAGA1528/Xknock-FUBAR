@@ -1,0 +1,113 @@
+@use "global" as *;
+
+.page-information-thanks{
+    margin-top: rem(60);
+    text-align: center;
+    @include mq(md) {
+        margin-top: rem(160);
+    }
+}
+
+.page-information-thanks__inner{
+    max-width: $max-width;
+    margin: auto;
+    padding: 0 rem(25);
+    @include mq(md) {
+        max-width: rem(947);
+        padding: 0 rem(25);
+    }
+}
+
+.page-information-thanks__title{
+    color: $darkgreen;
+    font-size: rem(24);
+    font-weight: $bold;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(28);
+    }
+}
+
+.page-information-thanks__text{
+    margin-top: rem(40);
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: calc(26/14);
+    letter-spacing: 0.01em;
+    padding: 0 rem(10);
+    @include mq(md) {
+        margin-top: rem(60);
+        font-size: rem(20);
+        font-weight: $medium;
+        line-height: calc(36/20);
+    }
+}
+
+
+
+
+
+.page-information-thanks__button{
+    text-align: center;
+    margin-top: rem(80);
+    padding-bottom: rem(80);
+    @include mq(md) {
+        margin-top: rem(120);
+        padding-bottom: rem(240);
+    }
+}
+
+.page-company__button-text {
+    font-family: $third-font;
+    text-align: center;
+    position: relative;
+    background: $green;
+    color: $white;
+    border: solid 2.69px $darkgreen;
+    font-size: rem(14.71);
+    font-weight: $bold; 
+    letter-spacing: 0.01em;
+    padding-left: rem(4);
+    width: rem(245);
+    padding-top: rem(13);
+    padding-bottom: rem(11);
+    border-radius: rem(27);
+    z-index: 1;
+    transition: 0.4s;
+    overflow: hidden;
+    box-shadow: 0px 0px 10.76px rgba(0, 0, 0, 0.29);
+    @include mq(md) {
+        width: rem(389);
+        font-size: rem(22);
+        padding-top: rem(21);
+        padding-bottom: rem(21);    
+        border-radius: rem(86.07);
+    }
+}
+
+.page-company__button-text span::after {
+	background-image: url(../images/common/subbutton-arrow.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+    position: absolute;
+    top: 49%;
+    right: rem(30);
+    width: rem(15);
+	height: rem(15);
+	transform: translateY(-50%);
+	transition: 0.4s background-color;
+    @include mq(md) {
+        top: 49%;
+        right: rem(35);
+        width: rem(23);
+        height: rem(23);    
+    }
+}
+
+.page-company__button-text:hover{
+    box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    cursor: pointer;
+}
