@@ -6,22 +6,27 @@
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev,
 .swiper-button-next {
-    width: rem(100);
-    height: rem(100);
-    top: var(--swiper-navigation-top-offset,45%);
-}
-@media screen and (max-width: 1200px) {
-    .swiper-button-prev,
-    .swiper-button-next {
-        width: rem(50);
-        height: rem(50);
+    width: rem(31);
+    height: rem(31);
+    top: var(--swiper-navigation-top-offset,55%);
+    @include mq(md) {
+        width: rem(47);
+        height: rem(47);
+        top: var(--swiper-navigation-top-offset,45%);
     }
 }
-@media screen and (max-width: 768px) {
-    .swiper-button-prev,
-    .swiper-button-next {
-        width: rem(30);
-        height: rem(30);
+
+.swiper-button-prev{
+    left: var(--swiper-navigation-sides-offset, 0px);
+    @include mq(md) {
+        left: var(--swiper-navigation-sides-offset, 10px);
+    }
+}
+
+.swiper-button-next{
+    right: var(--swiper-navigation-sides-offset, 0px);
+    @include mq(md) {
+        right: var(--swiper-navigation-sides-offset, 10px);
     }
 }
 
@@ -33,39 +38,29 @@
 /* 前へ次への矢印カスタマイズ */
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  background-repeat: no-repeat;
-  background-size: contain;
-  content: "";
-  width: rem(100);
-  height: rem(100);
-  margin: auto;
-}
-@media screen and (max-width: 1200px) {
-    .swiper-button-prev::after,
-    .swiper-button-next::after {
-        width: rem(50);
-        height: rem(50);
-    }
-}
-@media screen and (max-width: 768px) {
-    .swiper-button-prev::after,
-    .swiper-button-next::after {
-        width: rem(30);
-        height: rem(30);
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    width: rem(31);
+    height: rem(31);
+    margin: auto;
+    @include mq(md) {
+        width: rem(47);
+        height: rem(47);
     }
 }
 
 
 /* 前への矢印カスタマイズ */
 .swiper-button-prev::after {
-  background-image: url(../images/common/review-botton-left.png);
+    background-image: url(../images/common/swiper-left.webp);
 }
 /* 次への矢印カスタマイズ */
 .swiper-button-next::after {
-  background-image: url(../images/common/review-botton-right.png);
+    background-image: url(../images/common/swiper-right.webp);
 }
 /* 画像サイズ調整 */
 .swiper-slide img {
-  height: auto;
-  width: 100%;
+    height: auto;
+    width: 100%;
 }
