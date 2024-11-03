@@ -1,0 +1,165 @@
+@use "global" as *;
+
+
+
+
+.form__item{
+    text-align: left;
+}
+
+.form__item + .form__item{
+    margin-top: rem(20);
+}
+
+.form__item label {
+    display: block;
+    margin-bottom: rem(5);
+    font-size: rem(14);
+    font-weight: $medium;
+    letter-spacing: 0.01em;
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+
+.form__item .required {
+    background-color: #F36F21;
+    color: #fff;
+    border-radius: rem(4);
+    font-size: rem(12);
+    font-weight: $medium;
+    letter-spacing: 0.01em;
+    margin-top: rem(-5);
+    margin-left: rem(10);
+    padding: rem(2.5) rem(8.5) rem(4);
+    @include mq(md) {
+        font-size: rem(16);
+        padding: 0 rem(8.5);
+    }
+}
+
+.form__item input {
+    width: 100%;
+    padding:rem(8)  rem(13.5) ;
+    border: solid 1px $darkgreen;
+    font-size: rem(16);
+    background-color: $white;
+    border-radius: rem(4);
+    box-sizing: border-box;
+    height: rem(50);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.btn__top{
+    margin-top: 2.5rem;
+    text-align: center;
+    @include mq(md){
+        margin-top: rem(60);
+    }
+}
+    
+.btn-submit {
+    position: relative;
+}
+    
+.btn-submit__body[type="submit"] {
+    font-family: $third-font;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: rem(204);
+    padding: rem(10) 0;
+    color: white;
+    background: $green;
+    border: 1.89px solid $darkgreen;
+    font-size: rem(14.71); 
+    font-weight: $bold;
+    transition: color 0.2s;
+    z-index: 1;
+    letter-spacing: 0.1em;
+    border-radius: rem(45);
+    box-shadow: 0px 0px 10.76px rgba(0, 0, 0, 0.29);
+
+    cursor: pointer;
+    @include mq(md){
+        font-size: rem(15.44); 
+        width: rem(273);
+        padding: rem(15.3) 0;
+    }
+}
+    
+.btn-submit:hover::after {
+    @include mq("md") {
+        transform: scale(1, 1);
+        pointer-events: none;
+    }
+}
+
+// .btn-submit__text {
+//     font-family: $third-font;
+//     position: absolute;
+//     display: inline-block;
+//     top: 27%;
+//     left: 39%;
+//     color: $white;
+//     z-index: 2;
+//     font-size: rem(14.71); 
+//     @include mq(md){
+//         font-weight: $bold;
+//         font-size: rem(15.44); 
+//         top: 29%;
+//         left: 44%;
+//     }
+// }
+
+.btn-submit__text::after {
+    content: "";
+    position: absolute;
+    max-width: rem(40);
+    width: 120%;
+    height: 100%;
+    left: rem(205);
+    top: 32%;
+    background-image: url(../images/common/subbutton-arrow.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    pointer-events: none;
+    width: rem(15);
+    height: rem(15);
+    z-index: 100;
+    @include mq(md){
+        top: 33%;
+        left: rem(321);
+        width: rem(16);
+        height: rem(16);
+    }
+}
+  
+  .btn-submit:hover .btn-submit__arrow::before,
+  .btn-submit:hover .btn-submit__arrow::after {
+    background-color: transparent;
+    pointer-events: none;
+  }
+  
+  .btn-submit__body[disabled] {
+    cursor: not-allowed;
+  }
+  
+
