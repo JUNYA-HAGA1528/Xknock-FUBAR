@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- meta情報 -->
+    <title>FUBAR合同会社(home)</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- ogp -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:description" content="" />
+    
+    <!-- ファビコン -->
+    <link rel="”icon”" href="" />
+    
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">    
+    
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="./assets/js/script.js"></script>
+</head>
+<body>
+    <!-------------------------------- 
+    header
+    --------------------------------->
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <a href="" class="header__logoLink">
+                    <img src="./assets/images/common/header-logo.svg" alt="ヘッダーロゴ">
+                </a>
+            </h1>
+            <button class="header__hamburger js-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <!-- headerメニュー sp -->
+            <nav class="header__sp-nav sp-nav js-drawer-menu">
+                <ul class="sp-nav__list">
+                    <li class="sp-nav__item">
+                        <a href="">
+                            <div class="sp-nav__wrapper">
+                                <p class="sp-nav__ja">導入事例</p>
+                                <img src="./assets/images/common/header-icon.webp" alt="矢印" loading="lazy">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="">
+                            <div class="sp-nav__wrapper">
+                                <p class="sp-nav__ja">運営会社</p>
+                                <img src="./assets/images/common/header-icon.webp" alt="矢印" loading="lazy">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="https://fubar.co.jp/column/" target="_blank">
+                            <div class="sp-nav__wrapper">
+                                <p class="sp-nav__ja">お役立ち情報</p>
+                                <img src="./assets/images/common/header-icon.webp" alt="矢印" loading="lazy">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sp-nav__item">
+                        <a href="">
+                            <div class="sp-nav__wrapper">
+                                <p class="sp-nav__ja">資料請求</p>
+                                <img src="./assets/images/common/header-icon.webp" alt="矢印" loading="lazy">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="sp-nav__item sp-nav__item--contact">
+                        <a href="">
+                            <div class="sp-nav__wrapper sp-nav__wrapper--contact">
+                                <img src="./assets/images/common/icon-mail.webp" alt="メールのアイコン" loading="lazy">
+                                <p class="pc-nav__ja pc-nav__ja--contact">お問い合わせ</p>
+                            </div>
+                        </a>
+                    </li>                    
+                </ul>
+            </nav>
+
+            <!-- headerメニュー pc -->
+            <nav class="header__pc-nav pc-nav u-desktop">
+                <ul class="pc-nav__list">
+                    <li class="pc-nav__item">
+                        <a href="">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">導入事例</p>
+                                <img src="./assets/images/common/header-icon.webp" alt="矢印" loading="lazy">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">運営会社</p>
+                                <img src="./assets/images/common/header-icon.webp" alt="矢印" loading="lazy">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="https://fubar.co.jp/column/" target="_blank">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">お役立ち情報</p>
+                                <img src="./assets/images/common/header-icon.webp" alt="矢印" loading="lazy">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item">
+                        <a href="">
+                            <div class="pc-nav__wrapper">
+                                <p class="pc-nav__ja">資料請求</p>
+                                <img src="./assets/images/common/header-icon.webp" alt="矢印" loading="lazy">
+                            </div>
+                        </a>
+                    </li>
+                    <li class="pc-nav__item pc-nav__item--contact">
+                        <a href="">
+                            <div class="pc-nav__wrapper pc-nav__wrapper--contact">
+                                <img src="./assets/images/common/icon-mail.webp" alt="メールのアイコン" loading="lazy">
+                                <p class="pc-nav__ja pc-nav__ja--contact">お問い合わせ</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+
+    <!-------------------------------- 
+    fv
+    --------------------------------->
+    <section class="works__fv sub-fv">
+        <div class="sub-fv__inner">
+            <div class="sub-fv__bg">
+                <div class="sub-fv__bg-color">
+                    <div class="sub-fv__img">
+                        <img src="./assets/images/common/sub-fv.webp" alt="下層ページのFV背景">
+                    </div>
+                    <div class="sub-fv__sentence">
+                        <div class="sub-fv__subtitle">導入事例</div>
+                        <h1 class="sub-fv__title">works</h1>
+                        <div class="sub-fv__bottomLine"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-------------------------------- 
+    breadcrumb
+    --------------------------------->
+    <div class="breadcrumb">
+        <div class="breadcrumb__inner">
+            <div>TOP&emsp;>&emsp;導入事例</div>
+        </div>
+    </div>
+
+
+
+
+    <!-------------------------------- 
+    本記事
+    --------------------------------->
+    <section class="top-works works">
+        <figure class="works__icon">
+            <img src="./assets/images/common/award3.webp" alt="過去実績100社以上" loading="lazy">
+        </figure>
+        <div class="works__titleBox">
+            <h2 class="works__title-pc u-desktop"><span class="works__title-zero"></span>＼累計LINE構築・運用実績数<span class="works__title-first">100</span>社突破‼<span class="works__title-zero">／</span></h2>
+            <h2 class="works__title-sp u-mobile">
+                <span class="works__title-second">累計LINE構築・運用実績数</span><br>
+                <span class="works__title-third">＼</span>
+                <span class="works__title-four">100</span>
+                <span class="works__title-five">社突破‼</span>
+                <span class="works__title-six">／</span>
+            </h2>
+        </div>
+
+        <div class="works__swiper">
+            <div class="works__swiper-inner">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="works__swiper-content">
+                                <div class="works__swiper-left">
+                                    <p class="works__swiper-name">おうち購入研究所</p>
+                                    <p class="works__swiper-text">元々自社でSNS発信をしており、集客や売上に繋がらない状態が続いていましたが、Lステップ導入で個人面談の誘致に成功しました。</p>
+                                    <button class="works-card__button">
+                                        <a href="">
+                                            <div class="works-card__button-text">
+                                                <span>事例をみる</span>
+                                            </div>
+                                        </a>
+                                    </button>
+                                </div>
+                                <div class="works__swiper-right">
+                                    <img src="./assets/images/common/dammy.jpg" alt="杉山さんの写真">
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+
+                        <div class="swiper-slide">
+                            <div class="achievements__wrapper">
+                                <div class="achievements__img">
+                                    <img src="./assets/images/common/review2.jpg" alt="佐々木さんの写真">
+                                </div>
+                                
+                                <div class="achievements__textbox">
+                                    <h3 class="achievements__owner">南池袋店、恵比寿東口店</h3>
+                                    <p class="achievements__comment">オーナーの月間収益<br><span>250万</span></p>
+                                    <p class="achievements__text">
+                                        <div class="achievements__detail">
+                                            <dl class="achievements__content">
+                                                <div class="achievements__dt">
+                                                    <dt>店舗エリア：</dt>
+                                                </div>
+                                                <div class="achievements__dd">
+                                                    <dd>東京</dd>
+                                                </div>
+                                            </dl>
+                                            <dl class="achievements__content">
+                                                <div class="achievements__dt">
+                                                    <dt>月間売上：</dt>
+                                                </div>
+                                                <div class="achievements__dd">
+                                                    <dd>450万</dd>
+                                                </div>
+                                            </dl>
+                                            <dl class="achievements__content">
+                                                <div class="achievements__dt">
+                                                    <dt>月間新規数：</dt>
+                                                </div>
+                                                <div class="achievements__dd">
+                                                    <dd>40人獲得</dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="achievements__wrapper">
+                                <div class="achievements__img">
+                                    <img src="./assets/images/common/review1.jpg" alt="大堀さんの写真">
+                                </div>
+                                
+                                <div class="achievements__textbox">
+                                    <h3 class="achievements__owner">新潟店</h3>
+                                    <p class="achievements__comment">オーナーの月間収益<br><span>100万</span></p>
+                                    <p class="achievements__text">
+                                        <div class="achievements__detail">
+                                            <dl class="achievements__content">
+                                                <div class="achievements__dt">
+                                                    <dt>店舗エリア：</dt>
+                                                </div>
+                                                <div class="achievements__dd">
+                                                    <dd>新潟県</dd>
+                                                </div>
+                                            </dl>
+                                            <dl class="achievements__content">
+                                                <div class="achievements__dt">
+                                                    <dt>月間売上：</dt>
+                                                </div>
+                                                <div class="achievements__dd">
+                                                    <dd>200万</dd>
+                                                </div>
+                                            </dl>
+                                            <dl class="achievements__content">
+                                                <div class="achievements__dt">
+                                                    <dt>月間新規数：</dt>
+                                                </div>
+                                                <div class="achievements__dd">
+                                                    <dd>30人獲得</dd>
+                                                </div>
+                                            </dl>
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 前後の矢印 -->
+                    <div class="swiper-button-prev swiper-button-black"></div>
+                    <div class="swiper-button-next swiper-button-white"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+
+        
+        <div class="works__container">
+            <div class="works__inner">
+                
+                <ul class="works__list works-card">
+                    <li class="works-card__item">
+                        <div class="works-card__img">
+                            <img src="./assets/images/common/dammy.jpg" alt="">
+                        </div>
+                        <div class="works-card__content">
+                            <h3 class="works-card__title">Lステップ王子</h3>
+                            <p class="works-card__text">
+                                Twitterと公式LINEを活用してリストマーケティングを確立。
+                            </p>
+                            <button class="works-card__button">
+                                <a href="">
+                                    <div class="works-card__button-text">
+                                        <span>事例をみる</span>
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="works-card__item">
+                        <div class="works-card__img">
+                            <img src="./assets/images/common/dammy.jpg" alt="">
+                        </div>
+                        <div class="works-card__content">
+                            <h3 class="works-card__title">株式会社var</h3>
+                            <p class="works-card__text">
+                                導入後6ヶ月で月売1500万円達成‼️
+                            </p>
+                            <button class="works-card__button">
+                                <a href="">
+                                    <div class="works-card__button-text">
+                                        <span>事例をみる</span>
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="works-card__item">
+                        <div class="works-card__img">
+                            <img src="./assets/images/common/dammy.jpg" alt="">
+                        </div>
+                        <div class="works-card__content">
+                            <h3 class="works-card__title">アベントゥーライフ株式会社</h3>
+                            <p class="works-card__text">
+                                LINEの導入によって業務効率化と自社の強みを活かした販売数の向上を実現
+                            </p>
+                            <button class="works-card__button">
+                                <a href="">
+                                    <div class="works-card__button-text">
+                                        <span>事例をみる</span>
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="works-card__item">
+                        <div class="works-card__img">
+                            <img src="./assets/images/common/dammy.jpg" alt="">
+                        </div>
+                        <div class="works-card__content">
+                            <h3 class="works-card__title">つっちー社長</h3>
+                            <p class="works-card__text">
+                                たった5日で4,000万円程度の売り上げを達成‼️
+                            </p>
+                            <button class="works-card__button">
+                                <a href="">
+                                    <div class="works-card__button-text">
+                                        <span>事例をみる</span>
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="works-card__item">
+                        <div class="works-card__img">
+                            <img src="./assets/images/common/dammy.jpg" alt="">
+                        </div>
+                        <div class="works-card__content">
+                            <h3 class="works-card__title">テキストがはいります</h3>
+                            <p class="works-card__text">
+                                テキストがはいります。テキストがはいります。テキストがはいります。テキストがはいります。テキストがはいります。テキストがはいります。テキストがはいります。テキストがはいります。テキストがはいります。
+                            </p>
+                            <button class="works-card__button">
+                                <a href="">
+                                    <div class="works-card__button-text">
+                                        <span>事例をみる</span>
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </li>
+                    <li class="works-card__item">
+                        <div class="works-card__img">
+                            <img src="./assets/images/common/dammy.jpg" alt="">
+                        </div>
+                        <div class="works-card__content">
+                            <h3 class="works-card__title">テキストがはいります</h3>
+                            <p class="works-card__text">
+                                テキストがはいります。
+                            </p>
+                            <button class="works-card__button">
+                                <a href="">
+                                    <div class="works-card__button-text">
+                                        <span>事例をみる</span>
+                                    </div>
+                                </a>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+
+                <button class="works__button">
+                    <a href="">
+                        <div class="works__button-text">
+                            <span>もっとみる</span>
+                        </div>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------------- 
+        LINEでの集客から受注までワンストップでサポート
+    --------------------------------->
+    <section class="top-support support">
+        <div class="support__heading">
+            <div class="support__flex">
+                <div class="support__topLine"></div>
+                <img class="support__check" src="./assets/images/common/section-subhead-check.webp" alt="チェック印" loading="lazy">
+                <div class="support__topLine"></div>
+            </div>
+            <h2 class="support__title">LINEでの<span class="support__title-color">集客</span>から<span class="support__title-color">受注</span>まで<br class="u-mobile"><span class="subhead__text-color">ワンストップ</span>でサポート</h2>
+            <div class="subhead__bottomLine"></div>
+        </div>
+        <ul class="support__list">
+            <li class="support__item">
+                <div class="support__content">
+                    <img class="support__comment" src="./assets/images/common/support-comment1.webp" alt="LINE運用担当になったら" loading="lazy">
+                    <img class="support__img" src="./assets/images/common/support-im1.webp" alt="知っておきたいこと30選" loading="lazy">
+                    <div class="support__wrapper">
+                        <p class="support__text">
+                            LMコネクトの導入事例やLINEに関する情報をまとめた<br>
+                            資料をダウンロードいただけます。
+                        </p>
+                    </div>
+                    <div class="support__button">
+                        <div class="button__bg">
+                            <a href="" target="_blank">
+                                <img class="support__button-comment" src="./assets/images/common/supportbutton-comment1.webp" alt="カンタン30秒でプレゼント" loading="lazy">
+                                <button class="support__button-text support__button-text--white">
+                                    <span>まずは資料請求する</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="support__item support__item--right">
+                <div class="support__content support__content--right">
+                    <img class="support__comment" src="./assets/images/common/support-comment2.webp" alt="キャンペーン実施中！！" loading="lazy">
+                    <img class="support__img support__img--right" src="./assets/images/common/support-im2.webp" alt="無料相談受付中！！" loading="lazy">
+                    <div class="support__wrapper">
+                        <p class="support__text support__text--right">
+                            LMコネクトは今まで100社以上の実績があり、安心してご相談できます。<br class="u-desktop">
+                            まずは、無料相談をお待ちしております。
+                        </p>
+                    </div>
+                    <div class="support__button">
+                        <a href="" target="_blank">
+                            <img class="support__button-comment" src="./assets/images/common/supportbutton-comment2.webp" alt="最大 30,000 円割引キャンペーン中" loading="lazy">
+                            <button class="support__button-text">
+                                <span>プロに相談してみる</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-------------------------------- 
+        footer
+    --------------------------------->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__content">
+                <div class="footer__wrapper">
+                    <h2 class="footer__logo">
+                        <img src="./assets/images/common/footer-logo.webp" alt="LM-コネクト" loading="lazy">
+                    </h2>
+                    <p class="footer__address">
+                        〒144-0051<br>
+                        東京都大田区西蒲田6丁目32番11号ＪクリエイトⅠ
+                    </p>
+                </div>
+                <div class="footer__nav footer-nav">
+                    <ul class="footer-nav__list">
+                        <li class="footer-nav__item">
+                            <a href="">
+                                <div class="footer-nav__box">
+                                    <img class="footer-nav__icon" src="./assets/images/common/footer-icon.webp" alt="右向きの矢印" loading="lazy">
+                                    <p class="footer-nav__text">トップページ</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">
+                                <div class="footer-nav__box">
+                                    <img class="footer-nav__icon" src="./assets/images/common/footer-icon.webp" alt="右向きの矢印" loading="lazy">
+                                    <p class="footer-nav__text">導入事例</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">
+                                <div class="footer-nav__box">
+                                    <img class="footer-nav__icon" src="./assets/images/common/footer-icon.webp" alt="右向きの矢印" loading="lazy">
+                                    <p class="footer-nav__text">運営会社</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">
+                                <div class="footer-nav__box">
+                                    <img class="footer-nav__icon" src="./assets/images/common/footer-icon.webp" alt="右向きの矢印" loading="lazy">
+                                    <p class="footer-nav__text">お役立ち情報</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="footer-nav__item">
+                            <a href="">
+                                <div class="footer-nav__box">
+                                    <img class="footer-nav__icon" src="./assets/images/common/footer-icon.webp" alt="右向きの矢印" loading="lazy">
+                                    <p class="footer-nav__text">資料請求</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__buttons">
+                <button class="footer__button">
+                    <a href="" target="_blank">
+                        <div class="footer__text">
+                            <span>資料請求</span>
+                        </div>
+                    </a>
+                </button>
+                <button class="footer__button">
+                    <a href="" target="_blank">
+                        <div class="footer__text footer__text--green">
+                            <span>お問い合わせ</span>
+                        </div>
+                    </a>
+                </button>
+            </div>
+            <p class="footer__copyright">
+                <small>COPYRIGHT FUBAR INC. ALL RIGHT RESERVED</small>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

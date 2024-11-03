@@ -1,5 +1,57 @@
 @use "global" as *;
 
 .page-information{
-    
+
+}
+
+
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* カード間の間隔 */
+    justify-content: center;
+}
+
+.card-wrapper {
+    flex: 1 1 calc(33.33% - 20px); /* 3列のカードの幅調整 */
+    max-width: calc(33.33% - 20px); /* 最大幅を指定 */
+}
+
+.card-wrapper.single {
+    flex: 1 1 100%; /* 単独カードは100%幅で中央揃え */
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* カードを親要素の幅に合わせる */
+    max-width: 300px; /* カードの最大幅を設定して中央揃え */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.download-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.download-button:hover {
+    background-color: #45a049;
 }

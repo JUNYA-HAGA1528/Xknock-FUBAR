@@ -35,5 +35,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         });
     
     
-
+        const swiper = new Swiper(".swiper", {
+            loop: true,
+            // ページネーション
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // 前後の矢印
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            // // 自動再生
+            autoplay: {
+                delay: 5000, // スライドが切り替わるまでの遅延時間（ミリ秒）
+                disableOnInteraction: false, // ユーザーの操作後も自動再生を続ける
+            },
+        });
 });
