@@ -144,12 +144,17 @@
     width: rem(15);
     height: rem(15);
     z-index: 100;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1); /* ゆっくり加速して止まる動き */
     @include mq(md){
         top: 33%;
         left: rem(321);
         width: rem(16);
         height: rem(16);
     }
+}
+
+.btn-submit:hover .btn-submit__text::after {
+    transform: translateX(rem(5)); /* rem(5)の部分で移動量を調整 */
 }
   
   .btn-submit:hover .btn-submit__arrow::before,

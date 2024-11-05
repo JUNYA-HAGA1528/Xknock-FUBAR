@@ -1,10 +1,10 @@
 @use "global" as *;
 
-.contact{
+.page-contact{
     text-align: center;
 }
 
-.contact__inner{
+.page-contact__inner{
     max-width: $max-width;
     margin: auto;
     padding: 0 rem(25);
@@ -14,7 +14,7 @@
     }
 }
 
-.contact__text{
+.page-contact__text{
     font-size: rem(16);
     font-weight: $medium;
     line-height: 1.8;
@@ -25,7 +25,7 @@
 
 
 
-.contact__container{
+.page-contact__container{
     margin-top: rem(40);
     padding-bottom: rem(80);
     @include mq(md) {
@@ -34,13 +34,13 @@
     }
 }
 
-.contact__flex{
+.page-contact__flex{
     @include mq(md) {
         display: flex;
     }
 }
 
-.contact__left{
+.page-contact__left{
     color: $white;
     text-align: left;
     background-color: $darkgreen;
@@ -51,14 +51,14 @@
     }
 }
 
-.contact__right{
+.page-contact__right{
     background-color: #EFF9F7;
     @include mq(md) {
         width: 57.62%;
     }
 }
 
-.contact__subtitle{
+.page-contact__subtitle{
     color: $green;
     font-size: rem(16);
     font-weight: $bold;
@@ -66,7 +66,7 @@
     font-family: $second-font;
 }
 
-.contact__title{
+.page-contact__title{
     margin-top: rem(20);
     font-size: rem(24);
     font-weight: $bold;
@@ -75,7 +75,7 @@
     }
 }
 
-.contact__border{
+.page-contact__border{
     border-bottom: solid 3px $green;
     width: rem(100);
     margin-top: rem(20);
@@ -85,7 +85,7 @@
     }
 }
 
-.contact__thanks{
+.page-contact__thanks{
     margin-top: rem(40);
     font-size: rem(14);
     font-weight: $medium;
@@ -98,7 +98,7 @@
     }
 }
 
-.contact__achievement{
+.page-contact__achievement{
     margin-top: rem(60);
     display: flex;
     align-items: center;
@@ -106,14 +106,14 @@
     position: relative;
 }
 
-.contact__achievement--second{
+.page-contact__achievement--second{
     margin-top: rem(48);
     @include mq(md) {
         margin-top: rem(28);
     }
 }
 
-.contact__achievement-img{
+.page-contact__achievement-img{
     position: absolute;
     top: -55%;
     right: 0ch;
@@ -126,13 +126,13 @@
     }
 }
 
-.contact__achievement-text{
+.page-contact__achievement-text{
     font-size: rem(20);
     font-weight: $bold;
     line-height: calc(35/20);
 }
 
-.contact__achievement-border{
+.page-contact__achievement-border{
     border-bottom: solid 1px $white;
     width: rem(68);
     @include mq(md) {
@@ -140,18 +140,18 @@
     }
 }
 
-.contact__achievement-border--second{
+.page-contact__achievement-border--second{
     width: rem(68);
     @include mq(md) {
         width: rem(78);
     }
 }
 
-.contact__company{
+.page-contact__company{
     margin-top: rem(20);
 }
 
-.contact__company img {
+.page-contact__company img {
     aspect-ratio: 298 / 185;
     width: 100%;
     height: 100%;
@@ -167,7 +167,7 @@
 
 
 
-.contact__box{
+.page-contact__box{
     border-left: solid 3px $green;
     margin-top: rem(40);
     @include mq(md) {
@@ -176,7 +176,7 @@
     }
 }
 
-.contact__box-text{
+.page-contact__box-text{
     margin-left: rem(20);
     font-size: rem(14);
     font-weight: $bold;
@@ -187,7 +187,7 @@
     }
 }
 
-.contact__box-text + .contact__box-text{
+.page-contact__box-text + .page-contact__box-text{
     margin-top: rem(5);
 }
 
@@ -196,7 +196,7 @@
 
 
 
-.contact__form{
+.page-contact__form{
     max-width: rem(510);
     margin: 0 auto;
     padding: rem(60) rem(20);
@@ -205,7 +205,7 @@
     }
 }
 
-.contact__form--second{
+.page-contact__form--second{
     padding: rem(60) rem(20);
     @include mq(md) {
         padding: rem(236) 0;

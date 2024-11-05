@@ -306,3 +306,7 @@
 	background-image: url(../images/common/arrowgreen.webp);
 }
 
+.support__button:hover .support__button-comment {
+    transform: translate(-50%, -23%); /* X軸は中央に固定し、Y軸を少し上に移動 */
+    transition: transform 0.3s ease; /* 移動アニメーションの速度 */
+}

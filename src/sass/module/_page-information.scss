@@ -174,7 +174,7 @@
 
 
 
-.page-information-card__item.single {
+.page-information-card__item.top {
     width: 100%; /* カードがコンテナの幅全体を使うように設定 */
     max-width: rem(352); /* 必要に応じて最大幅を指定、例として600px */
     margin: 0 auto; /* カードを中央に配置 */
@@ -183,14 +183,14 @@
     align-items: center;
 }
 
-.page-information-card__item.single:nth-child(3n + 1){
+.page-information-card__item.top:nth-child(3n + 1){
     @include mq(md){
         margin-left: auto;
     }
 }
 
 /* 枚数が増えたときのための処理 */
-.page-information-card__item.single:nth-child(n + 4){
+.page-information-card__item.top:nth-child(n + 4){
     @include mq(md){
         margin-top: 0%;
     }
